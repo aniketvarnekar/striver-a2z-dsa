@@ -1,2 +1,3 @@
 # striver-a2z-dsa
-Striver’s A2Z DSA Sheet
+
+Solutions for [Striver's A2Z DSA Sheet](https://takeuforward.org/dsa/strivers-a2z-sheet-learn-dsa-a-to-z).
