@@ -5,3 +5,4 @@ Solutions for [Striver's A2Z DSA Sheet](https://takeuforward.org/dsa/strivers-a2
 ## Contents
 
 - **[01-basics](01-basics/)** — Time & space complexity reference
+- **[02-patterns](02-patterns/)** — Star, number & character patterns
