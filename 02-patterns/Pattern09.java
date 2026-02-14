@@ -1,0 +1,37 @@
+/**
+ * Pattern 9: Print a diamond (pyramid + inverted pyramid) of stars centered with spaces.
+ */
+public class Pattern09 {
+
+    public static void printPattern(int size) {
+        for (int i = 0; i < size; i++) {
+            for (int j = 0; j < size - i - 1; j++) {
+                System.out.print(" ");
+            }
+            for (int j = 0; j < (2 * i) + 1; j++) {
+                System.out.print("*");
+            }
+            for (int j = 0; j < size - i - 1; j++) {
+                System.out.print(" ");
+            }
+            System.out.println();
+        }
+        for (int i = 0; i < size; i++) {
+            for (int j = 0; j < i; j++) {
+                System.out.print(" ");
+            }
+            for (int j = 0; j < 2 * (size - i) - 1; j++) {
+                System.out.print("*");
+            }
+            for (int j = 0; j < i; j++) {
+                System.out.print(" ");
+            }
+            System.out.println();
+        }
+    }
+
+    public static void main(String[] args) {
+        printPattern(5);
+    }
+
+}
