@@ -1,6 +1,6 @@
 # 04 — Basic Maths
 
-## Problem 1: Count digits in a number
+## [Problem 1: Count digits in a number](Problem01.java)
 
 **Problem Statement:**  
 Given an integer `N`, return the number of digits in `N`.
