@@ -10,7 +10,7 @@ public class Problem03 {
      * Time Complexity: O(log10 N) — the loop runs once per digit in the number.
      * Space Complexity: O(1) — uses a constant amount of extra space.
      */
-    private static boolean checkPalindrome(int number) {
+    private static boolean isPalindrome(int number) {
         int reverseNumber = 0;
         int originalNumber = number;
         
@@ -28,8 +28,7 @@ public class Problem03 {
     }
 
     public static void main(String[] args) {
-        boolean isPalindrome = checkPalindrome(4554);
-        if (isPalindrome) {
+        if (isPalindrome(4554)) {
             System.out.println("Palindrome Number");
         } else {
             System.out.println("Not Palindrome");
