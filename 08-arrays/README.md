@@ -61,3 +61,35 @@ Hence, the second smallest element is `2`, and the second largest element is `5`
 
 **Explanation:**  
 Since there is only one element in the array, there is no second smallest or second largest element.
+
+---
+
+## [Problem 3: Check if an Array is Sorted](Problem03.java)
+
+**Problem Statement:**  
+Given an array of size `N`, check whether the array is sorted in ascending (non-decreasing) order or not.
+
+Return `true` if the array is sorted, otherwise return `false`.
+
+### Example 1
+
+**Input:**  
+`N = 5, arr[] = {1, 2, 3, 4, 5}`  
+
+**Output:**  
+`true`  
+
+**Explanation:**  
+Every element in the array is smaller than or equal to its next element.  
+Hence, the array is sorted in non-decreasing order.
+
+### Example 2
+
+**Input:**  
+`N = 5, arr[] = {5, 4, 6, 7, 8}`  
+
+**Output:**  
+`false`  
+
+**Explanation:**  
+The element `5` is greater than `4`, so the array is not sorted in ascending order.
