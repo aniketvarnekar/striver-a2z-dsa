@@ -93,3 +93,48 @@ Hence, the array is sorted in non-decreasing order.
 
 **Explanation:**  
 The element `5` is greater than `4`, so the array is not sorted in ascending order.
+
+---
+
+## [Problem 4: Check if Array Is Sorted and Rotated](Problem04.java)
+
+**Problem Statement:**  
+Given an array `nums`, return `true` if the array was originally sorted in non-decreasing order and then rotated some number of positions (including zero). Otherwise, return `false`.
+
+There may be duplicates in the array.
+
+An array is considered rotated if elements are shifted circularly.
+
+### Example 1
+
+**Input:**  
+`nums = [3, 4, 5, 1, 2]`
+
+**Output:**  
+`true`
+
+**Explanation:**  
+`[1, 2, 3, 4, 5]` is the original sorted array.  
+After rotating it by 2 positions, it becomes `[3, 4, 5, 1, 2]`.
+
+### Example 2
+
+**Input:**  
+`nums = [2, 1, 3, 4]`
+
+**Output:**  
+`false`
+
+**Explanation:**  
+There is no sorted array which can be rotated to form this array.
+
+### Example 3
+
+**Input:**  
+`nums = [1, 2, 3]`
+
+**Output:**  
+`true`
+
+**Explanation:**  
+The array is already sorted and rotated 0 times.
