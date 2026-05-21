@@ -138,3 +138,38 @@ There is no sorted array which can be rotated to form this array.
 
 **Explanation:**  
 The array is already sorted and rotated 0 times.
+
+---
+
+## [Problem 5: Remove Duplicates In-place from Sorted Array](Problem05.java)
+
+**Problem Statement:**  
+Given a sorted integer array in non-decreasing order, remove the duplicates in-place such that each unique element appears only once.
+
+The relative order of the elements should remain the same.
+
+After removing duplicates, the first `k` elements of the array should contain the unique elements, where `k` is the number of unique elements.
+
+### Example 1
+
+**Input:**  
+`arr[] = {1, 1, 2, 2, 2, 3, 3}`  
+
+**Output:**  
+`[1, 2, 3, _, _, _, _]`  
+
+**Explanation:**  
+The unique elements are `1, 2, 3`.  
+Hence, the first 3 positions of the array contain the final result.
+
+### Example 2
+
+**Input:**  
+`arr[] = {1, 1, 1, 2, 2, 3, 3, 3, 3, 4, 4}`  
+
+**Output:**  
+`[1, 2, 3, 4, _, _, _, _, _, _, _]`  
+
+**Explanation:**  
+The unique elements are `1, 2, 3, 4`.  
+Hence, the first 4 positions of the array contain the final result.
