@@ -204,3 +204,32 @@ After 2 right rotations: `[6, 7, 1, 2, 3, 4, 5]`
 **Explanation:**  
 After 1 left rotation: `[2, 3, 4, 5, 6, 1]`  
 After 2 left rotations: `[3, 4, 5, 6, 1, 2]`
+
+---
+
+## [Problem 7: Move All Zeroes to the End of the Array](Problem07.java)
+
+**Problem Statement:**  
+Given an array of integers, move all the zeroes to the end of the array while maintaining the relative order of non-zero elements.
+
+### Example 1
+
+**Input:**  
+`arr[] = {1, 0, 2, 3, 0, 4, 0, 1}`  
+
+**Output:**  
+`{1, 2, 3, 4, 1, 0, 0, 0}`  
+
+**Explanation:**  
+All the zeroes are moved to the end while maintaining the order of non-zero elements.
+
+### Example 2
+
+**Input:**  
+`arr[] = {1, 2, 0, 1, 0, 4, 0}`  
+
+**Output:**  
+`{1, 2, 1, 4, 0, 0, 0}`  
+
+**Explanation:**  
+All the zeroes are moved to the end while maintaining the order of non-zero elements.
