@@ -173,3 +173,34 @@ Hence, the first 3 positions of the array contain the final result.
 **Explanation:**  
 The unique elements are `1, 2, 3, 4`.  
 Hence, the first 4 positions of the array contain the final result.
+
+---
+
+## [Problem 6: Rotate Array by K Elements](Problem06.java)
+
+**Problem Statement:**  
+Given an array of integers, rotate the array by `k` positions either to the left or right.
+
+### Example 1
+
+**Input:**  
+`nums = [1, 2, 3, 4, 5, 6, 7], k = 2, direction = right`
+
+**Output:**  
+`[6, 7, 1, 2, 3, 4, 5]`
+
+**Explanation:**  
+After 1 right rotation: `[7, 1, 2, 3, 4, 5, 6]`  
+After 2 right rotations: `[6, 7, 1, 2, 3, 4, 5]`
+
+### Example 2
+
+**Input:**  
+`nums = [1, 2, 3, 4, 5, 6], k = 2, direction = left`
+
+**Output:**  
+`[3, 4, 5, 6, 1, 2]`
+
+**Explanation:**  
+After 1 left rotation: `[2, 3, 4, 5, 6, 1]`  
+After 2 left rotations: `[3, 4, 5, 6, 1, 2]`
