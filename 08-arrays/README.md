@@ -306,3 +306,33 @@ All numbers from `1` to `8` are present except `6`.
 **Explanation:**  
 The array size is `4`, so the range is `[1, 5]`.  
 The missing number in this range is `4`.
+
+---
+
+## [Problem 11: Count Maximum Consecutive One's in the Array](Problem11.java)
+
+**Problem Statement:**  
+Given a binary array containing only `0`s and `1`s, find the maximum number of consecutive `1`s present in the array.
+
+### Example 1
+
+**Input:**  
+`arr[] = {1, 1, 0, 1, 1, 1}`  
+
+**Output:**  
+`3`  
+
+**Explanation:**  
+There are two consecutive `1`s and three consecutive `1`s in the array.  
+The maximum consecutive count is `3`.
+
+### Example 2
+
+**Input:**  
+`arr[] = {1, 0, 1, 1, 0, 1}`  
+
+**Output:**  
+`2`  
+
+**Explanation:**  
+The maximum number of consecutive `1`s in the array is `2`.
