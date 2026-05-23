@@ -274,3 +274,35 @@ Common elements in both arrays are `2, 3, 4, 5`.
 Distinct elements in `arr1` are `1, 6, 7, 8, 9, 10`.  
 Distinct elements in `arr2` are `11, 12`.  
 Hence, the union is `{1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12}`.
+
+---
+
+## [Problem 10: Find the Missing Number](Problem10.java)
+
+**Problem Statement:**  
+Given an array `arr[]` of size `n - 1` containing distinct integers in the range `[1, n]`, find the missing number in the array.
+
+The array represents a permutation of numbers from `1` to `n` with exactly one number missing.
+
+### Example 1
+
+**Input:**  
+`arr[] = {8, 2, 4, 5, 3, 7, 1}`  
+
+**Output:**  
+`6`  
+
+**Explanation:**  
+All numbers from `1` to `8` are present except `6`.
+
+### Example 2
+
+**Input:**  
+`arr[] = {1, 2, 3, 5}`  
+
+**Output:**  
+`4`  
+
+**Explanation:**  
+The array size is `4`, so the range is `[1, 5]`.  
+The missing number in this range is `4`.
