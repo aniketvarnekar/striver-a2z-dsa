@@ -336,3 +336,32 @@ The maximum consecutive count is `3`.
 
 **Explanation:**  
 The maximum number of consecutive `1`s in the array is `2`.
+
+---
+
+## [Problem 12: Find the Number that Appears Once](Problem12.java)
+
+**Problem Statement:**  
+Given a non-empty array of integers where every element appears twice except for one element, find the element that appears only once.
+
+### Example 1
+
+**Input:**  
+`arr[] = {2, 2, 1}`  
+
+**Output:**  
+`1`  
+
+**Explanation:**  
+Only the element `1` appears once, while all other elements appear twice.
+
+### Example 2
+
+**Input:**  
+`arr[] = {4, 1, 2, 1, 2}`  
+
+**Output:**  
+`4`  
+
+**Explanation:**  
+Only the element `4` appears once, while all other elements appear twice.
