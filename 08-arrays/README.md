@@ -365,3 +365,36 @@ Only the element `1` appears once, while all other elements appear twice.
 
 **Explanation:**  
 Only the element `4` appears once, while all other elements appear twice.
+
+---
+
+## [Problem 13: Longest Subarray with Given Sum K (Positives)](Problem13.java)
+
+**Problem Statement:**  
+Given an array `nums` of positive integers and an integer `k`, find the length of the longest subarray whose sum is equal to `k`.
+
+If no such subarray exists, return `0`.
+
+### Example 1
+
+**Input:**  
+`nums = [10, 5, 2, 7, 1, 9], k = 15`  
+
+**Output:**  
+`4`  
+
+**Explanation:**  
+The longest subarray with sum `15` is `[5, 2, 7, 1]`.  
+Its length is `4`.
+
+### Example 2
+
+**Input:**  
+`nums = [-3, 2, 1], k = 6`  
+
+**Output:**  
+`0`  
+
+**Explanation:**  
+There is no subarray whose sum equals `6`.  
+Hence, the answer is `0`.
