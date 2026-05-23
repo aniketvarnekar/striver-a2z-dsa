@@ -233,3 +233,44 @@ All the zeroes are moved to the end while maintaining the order of non-zero elem
 
 **Explanation:**  
 All the zeroes are moved to the end while maintaining the order of non-zero elements.
+
+---
+
+## [Problem 9: Union of Two Sorted Arrays](Problem09.java)
+
+**Problem Statement:**  
+Given two sorted arrays `arr1[]` and `arr2[]` of size `n` and `m`, find the union of the two arrays.
+
+The union of two arrays contains all distinct elements present in either array, arranged in ascending order.
+
+### Example 1
+
+**Input:**  
+`n = 5, m = 5`  
+`arr1[] = {1, 2, 3, 4, 5}`  
+`arr2[] = {2, 3, 4, 4, 5}`  
+
+**Output:**  
+`{1, 2, 3, 4, 5}`  
+
+**Explanation:**  
+Common elements in both arrays are `2, 3, 4, 5`.  
+Distinct element in `arr1` is `1`.  
+There are no distinct elements in `arr2`.  
+Hence, the union is `{1, 2, 3, 4, 5}`.
+
+### Example 2
+
+**Input:**  
+`n = 10, m = 7`  
+`arr1[] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10}`  
+`arr2[] = {2, 3, 4, 4, 5, 11, 12}`  
+
+**Output:**  
+`{1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12}`  
+
+**Explanation:**  
+Common elements in both arrays are `2, 3, 4, 5`.  
+Distinct elements in `arr1` are `1, 6, 7, 8, 9, 10`.  
+Distinct elements in `arr2` are `11, 12`.  
+Hence, the union is `{1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12}`.
