@@ -1,7 +1,5 @@
 # 08 — Arrays
 
-# Easy
-
 ## [Problem 1: Find the Largest Element in an Array](Problem01.java)
 
 **Problem Statement:**  
@@ -398,3 +396,45 @@ Its length is `4`.
 **Explanation:**  
 There is no subarray whose sum equals `6`.  
 Hence, the answer is `0`.
+
+---
+
+## [Problem 14: Length of the Longest Subarray with Zero Sum](Problem14.java)
+
+**Problem Statement:**  
+Given an array containing both positive and negative integers, find the length of the longest subarray whose sum is equal to `0`.
+
+### Example 1
+
+**Input:**  
+`N = 6, arr[] = {9, -3, 3, -1, 6, -5}`  
+
+**Output:**  
+`5`  
+
+**Explanation:**  
+The following subarrays have sum `0`:
+
+- `{-3, 3}`
+- `{-1, 6, -5}`
+- `{-3, 3, -1, 6, -5}`
+
+The longest subarray with sum `0` has length `5`.
+
+### Example 2
+
+**Input:**  
+`N = 8, arr[] = {6, -2, 2, -8, 1, 7, 4, -10}`  
+
+**Output:**  
+`8`  
+
+**Explanation:**  
+The following subarrays have sum `0`:
+
+- `{-2, 2}`
+- `{-8, 1, 7}`
+- `{-2, 2, -8, 1, 7}`
+- `{6, -2, 2, -8, 1, 7, 4, -10}`
+
+The longest subarray with sum `0` has length `8`.
