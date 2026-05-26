@@ -1,4 +1,4 @@
-# 08 — Arrays
+# 08 — Arrays [Easy]
 
 ## [Problem 1: Find the Largest Element in an Array](Problem01.java)
 
@@ -96,7 +96,7 @@ The element `5` is greater than `4`, so the array is not sorted in ascending ord
 
 ## [Problem 4: Check if Array Is Sorted and Rotated](Problem04.java)
 
-**Leetcode**
+**Leetcode**  
 https://leetcode.com/problems/check-if-array-is-sorted-and-rotated
 
 **Problem Statement:**  
@@ -144,7 +144,7 @@ The array is already sorted and rotated 0 times.
 
 ## [Problem 5: Remove Duplicates In-place from Sorted Array](Problem05.java)
 
-**Leetcode**
+**Leetcode**  
 https://leetcode.com/problems/remove-duplicates-from-sorted-array
 
 **Problem Statement:**  
@@ -182,7 +182,7 @@ Hence, the first 4 positions of the array contain the final result.
 
 ## [Problem 6: Rotate Array by K Elements](Problem06.java)
 
-**Leetcode**
+**Leetcode**  
 https://leetcode.com/problems/rotate-array
 
 **Problem Statement:**  
@@ -216,7 +216,7 @@ After 2 left rotations: `[3, 4, 5, 6, 1, 2]`
 
 ## [Problem 7: Move All Zeroes to the End of the Array](Problem07.java)
 
-**Leetcode**
+**Leetcode**  
 https://leetcode.com/problems/move-zeroes
 
 **Problem Statement:**  
@@ -321,7 +321,7 @@ The missing number in this range is `4`.
 
 ## [Problem 11: Count Maximum Consecutive One's in the Array](Problem11.java)
 
-**Leetcode**
+**Leetcode**  
 https://leetcode.com/problems/max-consecutive-ones
 
 **Problem Statement:**  
@@ -354,7 +354,7 @@ The maximum number of consecutive `1`s in the array is `2`.
 
 ## [Problem 12: Find the Number that Appears Once](Problem12.java)
 
-**Leetcode**
+**Leetcode**  
 https://leetcode.com/problems/single-number
 
 **Problem Statement:**  
