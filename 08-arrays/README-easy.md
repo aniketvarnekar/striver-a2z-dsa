@@ -96,6 +96,9 @@ The element `5` is greater than `4`, so the array is not sorted in ascending ord
 
 ## [Problem 4: Check if Array Is Sorted and Rotated](Problem04.java)
 
+**Leetcode**
+https://leetcode.com/problems/check-if-array-is-sorted-and-rotated
+
 **Problem Statement:**  
 Given an array `nums`, return `true` if the array was originally sorted in non-decreasing order and then rotated some number of positions (including zero). Otherwise, return `false`.
 
@@ -141,6 +144,9 @@ The array is already sorted and rotated 0 times.
 
 ## [Problem 5: Remove Duplicates In-place from Sorted Array](Problem05.java)
 
+**Leetcode**
+https://leetcode.com/problems/remove-duplicates-from-sorted-array
+
 **Problem Statement:**  
 Given a sorted integer array in non-decreasing order, remove the duplicates in-place such that each unique element appears only once.
 
@@ -176,6 +182,9 @@ Hence, the first 4 positions of the array contain the final result.
 
 ## [Problem 6: Rotate Array by K Elements](Problem06.java)
 
+**Leetcode**
+https://leetcode.com/problems/rotate-array
+
 **Problem Statement:**  
 Given an array of integers, rotate the array by `k` positions either to the left or right.
 
@@ -206,6 +215,9 @@ After 2 left rotations: `[3, 4, 5, 6, 1, 2]`
 ---
 
 ## [Problem 7: Move All Zeroes to the End of the Array](Problem07.java)
+
+**Leetcode**
+https://leetcode.com/problems/move-zeroes
 
 **Problem Statement:**  
 Given an array of integers, move all the zeroes to the end of the array while maintaining the relative order of non-zero elements.
@@ -309,6 +321,9 @@ The missing number in this range is `4`.
 
 ## [Problem 11: Count Maximum Consecutive One's in the Array](Problem11.java)
 
+**Leetcode**
+https://leetcode.com/problems/max-consecutive-ones
+
 **Problem Statement:**  
 Given a binary array containing only `0`s and `1`s, find the maximum number of consecutive `1`s present in the array.
 
@@ -338,6 +353,9 @@ The maximum number of consecutive `1`s in the array is `2`.
 ---
 
 ## [Problem 12: Find the Number that Appears Once](Problem12.java)
+
+**Leetcode**
+https://leetcode.com/problems/single-number
 
 **Problem Statement:**  
 Given a non-empty array of integers where every element appears twice except for one element, find the element that appears only once.
