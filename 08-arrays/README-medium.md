@@ -48,3 +48,44 @@ Hence, the answer is `[1, 2]`.
 **Explanation:**  
 `nums[0] + nums[1] = 3 + 3 = 6`  
 Hence, the answer is `[0, 1]`.
+
+---
+
+## [Problem 16: Sort Colors](Problem16.java)
+
+**Leetcode**
+https://leetcode.com/problems/sort-colors
+
+**Problem Statement:**  
+Given an array `nums` containing only `0`, `1`, and `2`, sort the array in-place such that:
+
+- `0` represents Red
+- `1` represents White
+- `2` represents Blue
+
+The colors should appear in the order:  
+`0 → 1 → 2`
+
+You must solve the problem without using the library sort function.
+
+### Example 1
+
+**Input:**  
+`nums = [2, 0, 2, 1, 1, 0]`
+
+**Output:**  
+`[0, 0, 1, 1, 2, 2]`
+
+**Explanation:**  
+After sorting, all `0`s appear first, followed by `1`s, then `2`s.
+
+### Example 2
+
+**Input:**  
+`nums = [2, 0, 1]`
+
+**Output:**  
+`[0, 1, 2]`
+
+**Explanation:**  
+The array is rearranged into sorted color order.
