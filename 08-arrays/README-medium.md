@@ -53,7 +53,7 @@ Hence, the answer is `[0, 1]`.
 
 ## [Problem 16: Sort Colors](Problem16.java)
 
-**Leetcode**
+**Leetcode**  
 https://leetcode.com/problems/sort-colors
 
 **Problem Statement:**  
@@ -89,3 +89,39 @@ After sorting, all `0`s appear first, followed by `1`s, then `2`s.
 
 **Explanation:**  
 The array is rearranged into sorted color order.
+
+---
+
+## [Problem 17: Majority Element](Problem17.java)
+
+**Leetcode**  
+https://leetcode.com/problems/majority-element
+
+**Problem Statement:**  
+Given an array `nums` of size `n`, find the majority element.
+
+The majority element is the element that appears more than `⌊n / 2⌋` times.
+
+You may assume that the majority element always exists in the array.
+
+### Example 1
+
+**Input:**  
+`nums = [3, 2, 3]`
+
+**Output:**  
+`3`
+
+**Explanation:**  
+The element `3` appears `2` times, which is more than `⌊3 / 2⌋ = 1`.
+
+### Example 2
+
+**Input:**  
+`nums = [2, 2, 1, 1, 1, 2, 2]`
+
+**Output:**  
+`2`
+
+**Explanation:**  
+The element `2` appears `4` times, which is more than `⌊7 / 2⌋ = 3`.
