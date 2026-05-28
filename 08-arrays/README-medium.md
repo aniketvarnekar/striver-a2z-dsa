@@ -170,3 +170,45 @@ The subarray `[1]` itself has the maximum sum.
 **Explanation:**  
 The subarray `[5, 4, -1, 7, 8]` has the largest sum:  
 `5 + 4 + (-1) + 7 + 8 = 23`
+
+---
+
+## [Problem 19: Best Time to Buy and Sell Stock](Problem19.java)
+
+**Leetcode**  
+https://leetcode.com/problems/best-time-to-buy-and-sell-stock
+
+**Problem Statement:**  
+You are given an array `prices` where `prices[i]` represents the stock price on the `i-th` day.
+
+You want to maximize your profit by choosing:
+- one day to buy the stock
+- a different future day to sell the stock
+
+Return the maximum profit possible.  
+If no profit can be made, return `0`.
+
+### Example 1
+
+**Input:**  
+`prices = [7, 1, 5, 3, 6, 4]`
+
+**Output:**  
+`5`
+
+**Explanation:**  
+Buy on day `2` at price `1` and sell on day `5` at price `6`.  
+Profit = `6 - 1 = 5`.
+
+Buying must happen before selling.
+
+### Example 2
+
+**Input:**  
+`prices = [7, 6, 4, 3, 1]`
+
+**Output:**  
+`0`
+
+**Explanation:**  
+The stock prices continuously decrease, so no profit can be made.
