@@ -212,3 +212,50 @@ Buying must happen before selling.
 
 **Explanation:**  
 The stock prices continuously decrease, so no profit can be made.
+
+---
+
+## [Problem 20: Rearrange Array Elements by Sign](Problem20.java)
+
+**Leetcode**  
+https://leetcode.com/problems/rearrange-array-elements-by-sign/
+
+**Problem Statement:**  
+Given a 0-indexed integer array `nums` of even length containing an equal number of positive and negative integers, rearrange the array such that:
+
+- Every consecutive pair of elements has opposite signs.
+- The relative order of positive numbers remains unchanged.
+- The relative order of negative numbers remains unchanged.
+- The resulting array starts with a positive number.
+
+Return the rearranged array.
+
+### Example 1
+
+**Input:**  
+`nums = [3, 1, -2, -5, 2, -4]`
+
+**Output:**  
+`[3, -2, 1, -5, 2, -4]`
+
+**Explanation:**  
+Positive numbers: `[3, 1, 2]`  
+Negative numbers: `[-2, -5, -4]`
+
+By placing positives at even indices and negatives at odd indices while preserving their order, the result becomes:
+
+`[3, -2, 1, -5, 2, -4]`
+
+### Example 2
+
+**Input:**  
+`nums = [-1, 1]`
+
+**Output:**  
+`[1, -1]`
+
+**Explanation:**  
+There is one positive and one negative number.  
+The rearranged array must begin with a positive number and alternate signs, resulting in:
+
+`[1, -1]`
