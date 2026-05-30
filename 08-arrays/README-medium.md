@@ -354,3 +354,62 @@ Hence, the leaders are `[7, 1, 0]`.
 - `22` is greater than all elements to its right (`12, 3, 0, 6`).
 
 Hence, the leaders are `[22, 12, 6]`.
+
+---
+
+## [Problem 23: Longest Consecutive Sequence](Problem23.java)
+
+**Leetcode**
+https://leetcode.com/problems/longest-consecutive-sequence
+
+**Problem Statement:**  
+Given an unsorted array of integers `nums`, return the length of the longest consecutive elements sequence.
+
+A consecutive sequence consists of numbers that differ by exactly `1`.
+
+Your algorithm must run in **O(N)** time complexity.
+
+### Example 1
+
+**Input:**  
+`nums = [100, 4, 200, 1, 3, 2]`
+
+**Output:**  
+`4`
+
+**Explanation:**  
+The longest consecutive sequence is:
+
+`[1, 2, 3, 4]`
+
+Its length is `4`.
+
+### Example 2
+
+**Input:**  
+`nums = [0, 3, 7, 2, 5, 8, 4, 6, 0, 1]`
+
+**Output:**  
+`9`
+
+**Explanation:**  
+The longest consecutive sequence is:
+
+`[0, 1, 2, 3, 4, 5, 6, 7, 8]`
+
+Its length is `9`.
+
+### Example 3
+
+**Input:**  
+`nums = [1, 0, 1, 2]`
+
+**Output:**  
+`3`
+
+**Explanation:**  
+The longest consecutive sequence is:
+
+`[0, 1, 2]`
+
+Its length is `3`.
