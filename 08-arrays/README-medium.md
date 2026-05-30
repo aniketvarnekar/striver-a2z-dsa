@@ -313,3 +313,44 @@ The next lexicographically greater permutation after `[2,3,1]` is `[3,1,2]`.
 **Explanation:**  
 `[3,2,1]` is the largest possible permutation.  
 Therefore, the next permutation wraps around to the smallest permutation, `[1,2,3]`.
+
+---
+
+## [Problem 22: Leaders in an Array](Problem22.java)
+
+**Problem Statement:**  
+Given an array of integers, find all the leaders in the array.
+
+An element is considered a leader if it is greater than all the elements to its right.
+
+The rightmost element is always a leader.
+
+### Example 1
+
+**Input:**  
+`arr = [4, 7, 1, 0]`
+
+**Output:**  
+`[7, 1, 0]`
+
+**Explanation:**  
+- `0` is a leader because it is the rightmost element.
+- `1` is greater than all elements to its right (`0`).
+- `7` is greater than all elements to its right (`1, 0`).
+
+Hence, the leaders are `[7, 1, 0]`.
+
+### Example 2
+
+**Input:**  
+`arr = [10, 22, 12, 3, 0, 6]`
+
+**Output:**  
+`[22, 12, 6]`
+
+**Explanation:**  
+- `6` is a leader because it is the rightmost element.
+- `12` is greater than all elements to its right (`3, 0, 6`).
+- `22` is greater than all elements to its right (`12, 3, 0, 6`).
+
+Hence, the leaders are `[22, 12, 6]`.
