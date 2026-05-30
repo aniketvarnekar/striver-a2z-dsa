@@ -259,3 +259,57 @@ There is one positive and one negative number.
 The rearranged array must begin with a positive number and alternate signs, resulting in:
 
 `[1, -1]`
+
+---
+
+## [Problem 21: Next Permutation](Problem21.java)
+
+**Leetcode**  
+https://leetcode.com/problems/next-permutation
+
+**Problem Statement:**  
+A permutation of an array is an arrangement of its elements in a specific order.
+
+Given an integer array `nums`, rearrange it into the next lexicographically greater permutation.
+
+If such a permutation is not possible (i.e., the array is in descending order), rearrange it into the lowest possible order (ascending order).
+
+The rearrangement must be performed **in-place** and use only **constant extra memory**.
+
+### Example 1
+
+**Input:**  
+`nums = [1, 2, 3]`
+
+**Output:**  
+`[1, 3, 2]`
+
+**Explanation:**  
+The permutations of `[1, 2, 3]` in lexicographical order are:
+
+`[1,2,3] → [1,3,2] → [2,1,3] → [2,3,1] → [3,1,2] → [3,2,1]`
+
+The next permutation after `[1,2,3]` is `[1,3,2]`.
+
+### Example 2
+
+**Input:**  
+`nums = [2, 3, 1]`
+
+**Output:**  
+`[3, 1, 2]`
+
+**Explanation:**  
+The next lexicographically greater permutation after `[2,3,1]` is `[3,1,2]`.
+
+### Example 3
+
+**Input:**  
+`nums = [3, 2, 1]`
+
+**Output:**  
+`[1, 2, 3]`
+
+**Explanation:**  
+`[3,2,1]` is the largest possible permutation.  
+Therefore, the next permutation wraps around to the smallest permutation, `[1,2,3]`.
