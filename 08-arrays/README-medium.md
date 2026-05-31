@@ -413,3 +413,45 @@ The longest consecutive sequence is:
 `[0, 1, 2]`
 
 Its length is `3`.
+
+---
+
+## [Problem 24: Set Matrix Zeroes](Problem24.java)
+
+**Leetcode**  
+https://leetcode.com/problems/set-matrix-zeroes
+
+**Problem Statement:**  
+Given an `m × n` matrix, if any element is `0`, set its entire row and column to `0`.
+
+The operation must be performed on the matrix itself.
+
+### Example 1
+
+**Input:**  
+`matrix = [[1,1,1],[1,0,1],[1,1,1]]`
+
+**Output:**  
+`[[1,0,1],[0,0,0],[1,0,1]]`
+
+**Explanation:**  
+Since `matrix[1][1] = 0`, its entire row and column are set to `0`.
+
+### Example 2
+
+**Input:**  
+`matrix = [[0,1,2,0],[3,4,5,2],[1,3,1,5]]`
+
+**Output:**  
+`[[0,0,0,0],[0,4,5,0],[0,3,1,0]]`
+
+**Explanation:**  
+Since `matrix[0][0] = 0` and `matrix[0][3] = 0`:
+
+- Row `0` becomes all zeroes.
+- Column `0` becomes all zeroes.
+- Column `3` becomes all zeroes.
+
+The resulting matrix is:
+
+`[[0,0,0,0],[0,4,5,0],[0,3,1,0]]`
