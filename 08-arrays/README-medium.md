@@ -455,3 +455,51 @@ Since `matrix[0][0] = 0` and `matrix[0][3] = 0`:
 The resulting matrix is:
 
 `[[0,0,0,0],[0,4,5,0],[0,3,1,0]]`
+
+---
+
+## [Problem 25: Rotate Image](Problem25.java)
+
+**Leetcode**  
+https://leetcode.com/problems/rotate-image
+
+**Problem Statement:**  
+You are given an `n × n` 2D matrix representing an image. Rotate the image by **90 degrees clockwise**.
+
+You must perform the rotation **in-place**, meaning you must modify the input matrix directly and **must not allocate another 2D matrix** for the rotation.
+
+### Example 1
+
+**Input:**  
+`matrix = [[1,2,3],[4,5,6],[7,8,9]]`
+
+**Output:**  
+`[[7,4,1],[8,5,2],[9,6,3]]`
+
+**Explanation:**  
+After rotating the matrix by 90 degrees clockwise:
+
+```text
+1 2 3        7 4 1
+4 5 6   ->   8 5 2
+7 8 9        9 6 3
+```
+
+### Example 2
+
+**Input:**  
+`matrix = [[5,1,9,11],[2,4,8,10],[13,3,6,7],[15,14,12,16]]`
+
+**Output:**  
+`[[15,13,2,5],[14,3,4,1],[12,6,8,9],[16,7,10,11]]`
+
+**Explanation:**  
+
+```text
+5   1   9  11        15 13  2  5
+2   4   8  10   ->   14  3  4  1
+13  3   6   7        12  6  8  9
+15 14  12  16        16  7 10 11
+```
+
+The image is rotated 90 degrees clockwise while modifying the original matrix in-place.
