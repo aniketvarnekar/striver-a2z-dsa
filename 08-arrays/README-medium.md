@@ -503,3 +503,56 @@ After rotating the matrix by 90 degrees clockwise:
 ```
 
 The image is rotated 90 degrees clockwise while modifying the original matrix in-place.
+
+---
+
+## [Problem 26: Spiral Traversal of Matrix](Problem26.java)
+
+**Leetcode**  
+https://leetcode.com/problems/spiral-matrix
+
+**Problem Statement:**  
+Given a matrix, print the given matrix in spiral order.
+
+### Example 1
+
+**Input:**  
+
+```text
+Matrix[][] = {
+    {1, 2, 3, 4},
+    {5, 6, 7, 8},
+    {9, 10, 11, 12},
+    {13, 14, 15, 16}
+}
+```
+
+**Output:**  
+
+```text
+1, 2, 3, 4, 8, 12, 16, 15, 14, 13, 9, 5, 6, 7, 11, 10
+```
+
+**Explanation:**  
+The output of the matrix in spiral form.
+
+### Example 2
+
+**Input:**  
+
+```text
+Matrix[][] = {
+    {1, 2, 3},
+    {4, 5, 6},
+    {7, 8, 9}
+}
+```
+
+**Output:**  
+
+```text
+1, 2, 3, 6, 9, 8, 7, 4, 5
+```
+
+**Explanation:**  
+The output of the matrix in spiral form.
