@@ -96,3 +96,72 @@ The element `1` appears once, which is more than `⌊1 / 3⌋ = 0`.
 
 **Explanation:**  
 Both `1` and `2` appear once, which is more than `⌊2 / 3⌋ = 0`.
+
+---
+
+## [Problem 30: 3Sum](Problem30.java)
+
+**Leetcode**  
+https://leetcode.com/problems/3sum
+
+**Problem Statement:**  
+Given an integer array `nums`, return all the triplets `[nums[i], nums[j], nums[k]]` such that:
+
+- `i != j`
+- `i != k`
+- `j != k`
+- `nums[i] + nums[j] + nums[k] == 0`
+
+The solution set must not contain duplicate triplets.
+
+### Example 1
+
+**Input:**  
+`nums = [-1, 0, 1, 2, -1, -4]`
+
+**Output:**  
+
+```text
+[[-1, -1, 2], [-1, 0, 1]]
+```
+
+**Explanation:**  
+
+The following triplets sum to zero:
+
+- `(-1) + (-1) + 2 = 0`
+- `(-1) + 0 + 1 = 0`
+
+The distinct triplets are:
+
+```text
+[[-1, -1, 2], [-1, 0, 1]]
+```
+
+### Example 2
+
+**Input:**  
+`nums = [0, 1, 1]`
+
+**Output:**  
+
+```text
+[]
+```
+
+**Explanation:**  
+No triplet exists whose sum equals `0`.
+
+### Example 3
+
+**Input:**  
+`nums = [0, 0, 0]`
+
+**Output:**  
+
+```text
+[[0, 0, 0]]
+```
+
+**Explanation:**  
+The only possible triplet is `[0, 0, 0]`, and its sum is `0`.
