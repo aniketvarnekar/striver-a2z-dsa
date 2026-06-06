@@ -53,3 +53,46 @@ First N rows of Pascal's Triangle:
 
 **Explanation:**  
 `N = 1` is the base case of Pascal's Triangle.
+
+---
+
+## [Problem 29: Majority Element II](Problem29.java)
+
+**Leetcode**  
+https://leetcode.com/problems/majority-element-ii
+
+**Problem Statement:**  
+Given an integer array `nums` of size `n`, find all elements that appear more than `⌊ n / 3 ⌋` times.
+
+### Example 1
+
+**Input:**  
+`nums = [3, 2, 3]`
+
+**Output:**  
+`[3]`
+
+**Explanation:**  
+The element `3` appears `2` times, which is more than `⌊3 / 3⌋ = 1`.
+
+### Example 2
+
+**Input:**  
+`nums = [1]`
+
+**Output:**  
+`[1]`
+
+**Explanation:**  
+The element `1` appears once, which is more than `⌊1 / 3⌋ = 0`.
+
+### Example 3
+
+**Input:**  
+`nums = [1, 2]`
+
+**Output:**  
+`[1, 2]`
+
+**Explanation:**  
+Both `1` and `2` appear once, which is more than `⌊2 / 3⌋ = 0`.
