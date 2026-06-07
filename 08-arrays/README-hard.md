@@ -165,3 +165,59 @@ No triplet exists whose sum equals `0`.
 
 **Explanation:**  
 The only possible triplet is `[0, 0, 0]`, and its sum is `0`.
+
+---
+
+## [Problem 31: 4Sum](Problem31.java)
+
+**Leetcode**  
+https://leetcode.com/problems/4sum
+
+**Problem Statement:**  
+Given an array `nums` of `n` integers, return all unique quadruplets `[nums[a], nums[b], nums[c], nums[d]]` such that:
+
+- `0 <= a, b, c, d < n`
+- `a`, `b`, `c`, and `d` are distinct indices.
+- `nums[a] + nums[b] + nums[c] + nums[d] == target`
+
+The solution set must not contain duplicate quadruplets.
+
+You may return the answer in any order.
+
+### Example 1
+
+**Input:**  
+`nums = [1, 0, -1, 0, -2, 2], target = 0`
+
+**Output:**  
+
+```text
+[[-2, -1, 1, 2],
+ [-2,  0, 0, 2],
+ [-1,  0, 0, 1]]
+```
+
+**Explanation:**  
+
+The unique quadruplets whose sum equals `0` are:
+
+- `[-2, -1, 1, 2]`
+- `[-2, 0, 0, 2]`
+- `[-1, 0, 0, 1]`
+
+### Example 2
+
+**Input:**  
+`nums = [2, 2, 2, 2, 2], target = 8`
+
+**Output:**  
+
+```text
+[[2, 2, 2, 2]]
+```
+
+**Explanation:**  
+
+The only unique quadruplet whose sum equals `8` is:
+
+- `[2, 2, 2, 2]`
