@@ -221,3 +221,59 @@ The unique quadruplets whose sum equals `0` are:
 The only unique quadruplet whose sum equals `8` is:
 
 - `[2, 2, 2, 2]`
+
+---
+
+## [Problem 32: Length of the Longest Subarray with Zero Sum](Problem32.java)
+
+**Problem Statement:**  
+Given an array containing both positive and negative integers, find the length of the longest subarray whose sum is equal to zero.
+
+### Example 1
+
+**Input:**  
+`N = 6, array[] = {9, -3, 3, -1, 6, -5}`
+
+**Output:**  
+`5`
+
+**Explanation:**  
+
+The following subarrays have sum zero:
+
+- `{-3, 3}`
+- `{-1, 6, -5}`
+- `{-3, 3, -1, 6, -5}`
+
+The longest subarray with sum zero is:
+
+```text
+{-3, 3, -1, 6, -5}
+```
+
+Length = `5`
+
+### Example 2
+
+**Input:**  
+`N = 8, array[] = {6, -2, 2, -8, 1, 7, 4, -10}`
+
+**Output:**  
+`8`
+
+**Explanation:**  
+
+The following subarrays have sum zero:
+
+- `{-2, 2}`
+- `{-8, 1, 7}`
+- `{-2, 2, -8, 1, 7}`
+- `{6, -2, 2, -8, 1, 7, 4, -10}`
+
+The longest subarray with sum zero is:
+
+```text
+{6, -2, 2, -8, 1, 7, 4, -10}
+```
+
+Length = `8`
