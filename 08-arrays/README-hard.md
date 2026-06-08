@@ -277,3 +277,46 @@ The longest subarray with sum zero is:
 ```
 
 Length = `8`
+
+---
+
+## [Problem 33: Count the Number of Subarrays with Given XOR K](Problem33.java)
+
+**Problem Statement:**  
+Given an array of integers `A` and an integer `K`, find the total number of subarrays whose bitwise XOR of all elements is equal to `K`.
+
+### Example 1
+
+**Input:**  
+`A = [4, 2, 2, 6, 4], K = 6`
+
+**Output:**  
+`4`
+
+**Explanation:**  
+
+The subarrays having XOR equal to `6` are:
+
+- `[4, 2]`
+- `[4, 2, 2, 6, 4]`
+- `[2, 2, 6]`
+- `[6]`
+
+Therefore, the answer is `4`.
+
+### Example 2
+
+**Input:**  
+`A = [5, 6, 7, 8, 9], K = 5`
+
+**Output:**  
+`2`
+
+**Explanation:**  
+
+The subarrays having XOR equal to `5` are:
+
+- `[5]`
+- `[5, 6, 7, 8, 9]`
+
+Therefore, the answer is `2`.
