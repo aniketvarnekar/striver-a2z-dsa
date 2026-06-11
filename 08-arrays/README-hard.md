@@ -320,3 +320,55 @@ The subarrays having XOR equal to `5` are:
 - `[5, 6, 7, 8, 9]`
 
 Therefore, the answer is `2`.
+
+---
+
+## [Problem 34: Merge Intervals](Problem34.java)
+
+**Leetcode**  
+https://leetcode.com/problems/merge-intervals
+
+**Problem Statement:**  
+Given an array of intervals where `intervals[i] = [starti, endi]`, merge all overlapping intervals and return an array of the non-overlapping intervals that cover all the intervals in the input.
+
+### Example 1
+
+**Input:**  
+`intervals = [[1,3],[2,6],[8,10],[15,18]]`
+
+**Output:**  
+
+```text
+[[1,6],[8,10],[15,18]]
+```
+
+**Explanation:**  
+Intervals `[1,3]` and `[2,6]` overlap, so they are merged into `[1,6]`.
+
+### Example 2
+
+**Input:**  
+`intervals = [[1,4],[4,5]]`
+
+**Output:**  
+
+```text
+[[1,5]]
+```
+
+**Explanation:**  
+Intervals `[1,4]` and `[4,5]` are considered overlapping and are merged into `[1,5]`.
+
+### Example 3
+
+**Input:**  
+`intervals = [[4,7],[1,4]]`
+
+**Output:**  
+
+```text
+[[1,7]]
+```
+
+**Explanation:**  
+Intervals `[1,4]` and `[4,7]` overlap at `4`, so they are merged into `[1,7]`.
