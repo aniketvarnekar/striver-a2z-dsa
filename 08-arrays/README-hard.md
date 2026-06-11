@@ -372,3 +372,59 @@ Intervals `[1,4]` and `[4,5]` are considered overlapping and are merged into `[1
 
 **Explanation:**  
 Intervals `[1,4]` and `[4,7]` overlap at `4`, so they are merged into `[1,7]`.
+
+---
+
+## [Problem 35: Merge Sorted Array](Problem35.java)
+
+**Problem Statement:**  
+Given two sorted integer arrays `nums1` and `nums2`, merge both arrays into a single array sorted in non-decreasing order.
+
+The final sorted array should be stored inside `nums1` and the merge must be performed in-place.
+
+Array `nums1` has a length of `m + n`, where the first `m` elements are valid elements and the remaining positions are `0`s. Array `nums2` has a length of `n`.
+
+**Leetcode**  
+https://leetcode.com/problems/merge-sorted-array
+
+### Example 1
+
+**Input:**  
+`nums1 = [-5, -2, 4, 5, 0, 0, 0]`  
+`nums2 = [-3, 1, 8]`
+
+**Output:**  
+
+```text
+[-5, -3, -2, 1, 4, 5, 8]
+```
+
+**Explanation:**  
+The merged array is:
+
+```text
+[-5, -3, -2, 1, 4, 5, 8]
+```
+
+where `[-5, -2, 4, 5]` are from `nums1` and `[-3, 1, 8]` are from `nums2`.
+
+### Example 2
+
+**Input:**  
+`nums1 = [0, 2, 7, 8, 0, 0, 0]`  
+`nums2 = [-7, -3, -1]`
+
+**Output:**  
+
+```text
+[-7, -3, -1, 0, 2, 7, 8]
+```
+
+**Explanation:**  
+The merged array is:
+
+```text
+[-7, -3, -1, 0, 2, 7, 8]
+```
+
+where `[0, 2, 7, 8]` are from `nums1` and `[-7, -3, -1]` are from `nums2`.
