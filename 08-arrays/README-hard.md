@@ -488,3 +488,61 @@ Combined sorted array:
 ```
 
 The arrays are rearranged in-place while preserving sorted order.
+
+---
+
+## [Problem 37: Set Mismatch](Problem37.java)
+
+**Leetcode**  
+https://leetcode.com/problems/set-mismatch
+
+**Problem Statement:**  
+You have a set of integers that originally contains all the numbers from `1` to `n`.
+
+Due to an error, one number in the set appears twice, causing another number to be missing.
+
+Given an integer array `nums` representing the set after the error, find the duplicated number and the missing number, and return them as an array.
+
+### Example 1
+
+**Input:**  
+`nums = [1, 2, 2, 4]`
+
+**Output:**  
+
+```text
+[2, 3]
+```
+
+**Explanation:**  
+
+- `2` appears twice.
+- `3` is missing.
+
+Therefore, the answer is:
+
+```text
+[2, 3]
+```
+
+### Example 2
+
+**Input:**  
+`nums = [1, 1]`
+
+**Output:**  
+
+```text
+[1, 2]
+```
+
+**Explanation:**  
+
+- `1` appears twice.
+- `2` is missing.
+
+Therefore, the answer is:
+
+```text
+[1, 2]
+```
