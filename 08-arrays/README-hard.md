@@ -428,3 +428,63 @@ The merged array is:
 ```
 
 where `[0, 2, 7, 8]` are from `nums1` and `[-7, -3, -1]` are from `nums2`.
+
+---
+
+## [Problem 36: Merge Two Sorted Arrays Without Extra Space](Problem36.java)
+
+**Problem Statement:**  
+Given two sorted arrays `arr1[]` and `arr2[]` of sizes `m` and `n`, merge them such that the resulting elements remain sorted.
+
+The merge must be performed **without using any extra space**.
+
+After merging:
+
+- The first `m` smallest elements should be present in `arr1`.
+- The remaining `n` elements should be present in `arr2`.
+
+### Example 1
+
+**Input:**  
+`arr1 = [1, 3, 5, 7]`  
+`arr2 = [0, 2, 6, 8, 9]`
+
+**Output:**  
+
+```text
+arr1 = [0, 1, 2, 3]
+arr2 = [5, 6, 7, 8, 9]
+```
+
+**Explanation:**  
+After merging and maintaining sorted order without using extra space:
+
+```text
+Combined sorted array:
+[0, 1, 2, 3, 5, 6, 7, 8, 9]
+```
+
+The first 4 elements remain in `arr1` and the rest in `arr2`.
+
+### Example 2
+
+**Input:**  
+`arr1 = [1, 4, 8, 10]`  
+`arr2 = [2, 3, 9]`
+
+**Output:**  
+
+```text
+arr1 = [1, 2, 3, 4]
+arr2 = [8, 9, 10]
+```
+
+**Explanation:**  
+After merging:
+
+```text
+Combined sorted array:
+[1, 2, 3, 4, 8, 9, 10]
+```
+
+The arrays are rearranged in-place while preserving sorted order.
