@@ -546,3 +546,76 @@ Therefore, the answer is:
 ```text
 [1, 2]
 ```
+
+---
+
+## [Problem 38: Count Inversions in an Array](Problem38.java)
+
+**Problem Statement:**  
+Given an array of `N` integers, count the number of inversions in the array.
+
+An inversion is a pair `(A[i], A[j])` such that:
+
+- `i < j`
+- `A[i] > A[j]`
+
+### Example 1
+
+**Input:**  
+`N = 5, array[] = {1, 2, 3, 4, 5}`
+
+**Output:**  
+
+```text
+0
+```
+
+**Explanation:**  
+The array is already sorted. Therefore, there are no pairs `(A[i], A[j])` such that `i < j` and `A[i] > A[j]`.
+
+### Example 2
+
+**Input:**  
+`N = 5, array[] = {5, 4, 3, 2, 1}`
+
+**Output:**  
+
+```text
+10
+```
+
+**Explanation:**  
+The array is reverse sorted, resulting in the maximum possible number of inversions.
+
+The inversion pairs are:
+
+```text
+(5,4), (5,3), (5,2), (5,1),
+(4,3), (4,2), (4,1),
+(3,2), (3,1),
+(2,1)
+```
+
+Total inversions = `10`.
+
+### Example 3
+
+**Input:**  
+`N = 5, array[] = {5, 3, 2, 1, 4}`
+
+**Output:**  
+
+```text
+7
+```
+
+**Explanation:**  
+The inversion pairs are:
+
+```text
+(5,3), (5,2), (5,1), (5,4),
+(3,2), (3,1),
+(2,1)
+```
+
+Total inversions = `7`.
