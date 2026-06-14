@@ -675,3 +675,65 @@ The reverse pairs are:
 (2, 4) --> nums[2] = 3, nums[4] = 1, 3 > 2 * 1
 (3, 4) --> nums[3] = 5, nums[4] = 1, 5 > 2 * 1
 ```
+
+---
+
+## [Problem 40: Maximum Product Subarray](Problem40.java)
+
+**Leetcode**  
+https://leetcode.com/problems/maximum-product-subarray
+
+**Problem Statement:**  
+Given an integer array `nums`, find a contiguous non-empty subarray that has the largest product, and return the product.
+
+The test cases are generated so that the answer will fit in a 32-bit integer.
+
+Note that the product of an array with a single element is the value of that element.
+
+### Example 1
+
+**Input:**  
+`nums = [2, 3, -2, 4]`
+
+**Output:**  
+
+```text
+6
+```
+
+**Explanation:**  
+
+The subarray:
+
+```text
+[2, 3]
+```
+
+has the largest product:
+
+```text
+2 × 3 = 6
+```
+
+### Example 2
+
+**Input:**  
+`nums = [-2, 0, -1]`
+
+**Output:**  
+
+```text
+0
+```
+
+**Explanation:**  
+
+The result cannot be `2` because `[-2, -1]` is not a contiguous subarray.
+
+The maximum product subarray is:
+
+```text
+[0]
+```
+
+whose product is `0`.
