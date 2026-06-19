@@ -246,6 +246,43 @@ All the zeroes are moved to the end while maintaining the order of non-zero elem
 
 ---
 
+## [Problem 08: Linear Search](Problem08.java)
+
+**Problem Statement:**  
+Given an array and an element `num`, determine whether `num` is present in the array. If present, return its index; otherwise, return `-1`.
+
+### Example 1
+
+**Input:**  
+`arr[] = {1, 2, 3, 4, 5}, num = 3`
+
+**Output:**  
+
+```text
+2
+```
+
+**Explanation:**  
+
+`3` is present at index `2` in the array.
+
+### Example 2
+
+**Input:**  
+`arr[] = {5, 4, 3, 2, 1}, num = 5`
+
+**Output:**  
+
+```text
+0
+```
+
+**Explanation:**  
+
+`5` is present at index `0` in the array.
+
+---
+
 ## [Problem 9: Union of Two Sorted Arrays](Problem09.java)
 
 **Problem Statement:**  
