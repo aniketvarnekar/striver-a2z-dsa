@@ -159,3 +159,55 @@ arr[4] > 9
 ```
 
 Therefore, the upper bound of `9` is `4`.
+
+---
+
+## [Problem 04: Search Insert Position](Problem04.java)
+
+**Leetcode**  
+https://leetcode.com/problems/search-insert-position
+
+**Problem Statement:**  
+You are given a sorted array `arr` of distinct integers and a target value `x`.
+
+Return the index of `x` if it exists in the array. Otherwise, return the index where it should be inserted so that the array remains sorted.
+
+### Example 1
+
+**Input:**  
+`arr[] = {1, 2, 4, 7}, x = 6`
+
+**Output:**  
+
+```text
+3
+```
+
+**Explanation:**  
+
+`6` is not present in the array.
+
+If we insert `6` at index `3`, the array becomes:
+
+```text
+{1, 2, 4, 6, 7}
+```
+
+which remains sorted.
+
+### Example 2
+
+**Input:**  
+`arr[] = {1, 2, 4, 7}, x = 2`
+
+**Output:**  
+
+```text
+1
+```
+
+**Explanation:**  
+
+`2` is present in the array at index `1`.
+
+Therefore, the answer is `1`.
