@@ -318,3 +318,50 @@ The first occurrence of `8` is at index `3` and the last occurrence is at index 
 **Explanation:**  
 
 The array is empty, so the target cannot be found.
+
+---
+
+## [Problem 07: Count Occurrences in Sorted Array](Problem07.java)
+
+**Problem Statement:**  
+You are given a sorted array containing `N` integers and a number `X`. Find the number of occurrences of `X` in the array.
+
+### Example 1
+
+**Input:**  
+
+```text
+N = 7
+X = 3
+array[] = {2, 2, 3, 3, 3, 3, 4}
+```
+
+**Output:**  
+
+```text
+4
+```
+
+**Explanation:**  
+
+`3` occurs `4` times in the array.
+
+### Example 2
+
+**Input:**  
+
+```text
+N = 8
+X = 2
+array[] = {1, 1, 2, 2, 2, 2, 2, 3}
+```
+
+**Output:**  
+
+```text
+5
+```
+
+**Explanation:**  
+
+`2` occurs `5` times in the array.
