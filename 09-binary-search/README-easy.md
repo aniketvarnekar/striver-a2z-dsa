@@ -211,3 +211,47 @@ which remains sorted.
 `2` is present in the array at index `1`.
 
 Therefore, the answer is `1`.
+
+---
+
+## [Problem 05: Floor and Ceil in Sorted Array](Problem05.java)
+
+**Problem Statement:**  
+You are given a sorted array `arr` of `n` integers and an integer `x`.
+
+Find the **floor** and **ceil** of `x` in the array.
+
+- The **floor** of `x` is the largest element in the array that is smaller than or equal to `x`.
+- The **ceil** of `x` is the smallest element in the array that is greater than or equal to `x`.
+
+### Example 1
+
+**Input:**  
+`n = 6, arr[] = {3, 4, 4, 7, 8, 10}, x = 5`
+
+**Output:**  
+
+```text
+4 7
+```
+
+**Explanation:**  
+
+- The floor of `5` is `4`.
+- The ceil of `5` is `7`.
+
+### Example 2
+
+**Input:**  
+`n = 6, arr[] = {3, 4, 4, 7, 8, 10}, x = 8`
+
+**Output:**  
+
+```text
+8 8
+```
+
+**Explanation:**  
+
+- The floor of `8` is `8`.
+- The ceil of `8` is also `8`.
