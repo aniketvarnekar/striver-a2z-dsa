@@ -255,3 +255,66 @@ Find the **floor** and **ceil** of `x` in the array.
 
 - The floor of `8` is `8`.
 - The ceil of `8` is also `8`.
+
+---
+
+## [Problem 06: Find First and Last Position of Element in Sorted Array](Problem06.java)
+
+**Leetcode**  
+https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array
+
+**Problem Statement:**  
+Given an array of integers `nums` sorted in non-decreasing order, find the starting and ending position of a given target value.
+
+If the target is not found in the array, return:
+
+```text
+[-1, -1]
+```
+
+You must write an algorithm with **O(log n)** runtime complexity.
+
+### Example 1
+
+**Input:**  
+`nums = [5, 7, 7, 8, 8, 10], target = 8`
+
+**Output:**  
+
+```text
+[3, 4]
+```
+
+**Explanation:**  
+
+The first occurrence of `8` is at index `3` and the last occurrence is at index `4`.
+
+### Example 2
+
+**Input:**  
+`nums = [5, 7, 7, 8, 8, 10], target = 6`
+
+**Output:**  
+
+```text
+[-1, -1]
+```
+
+**Explanation:**  
+
+`6` is not present in the array.
+
+### Example 3
+
+**Input:**  
+`nums = [], target = 0`
+
+**Output:**  
+
+```text
+[-1, -1]
+```
+
+**Explanation:**  
+
+The array is empty, so the target cannot be found.
