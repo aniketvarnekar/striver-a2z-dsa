@@ -365,3 +365,53 @@ array[] = {1, 1, 2, 2, 2, 2, 2, 3}
 **Explanation:**  
 
 `2` occurs `5` times in the array.
+
+---
+
+## [Problem 08: Search Element in a Rotated Sorted Array](Problem08.java)
+
+**Leetcode**  
+https://leetcode.com/problems/search-in-rotated-sorted-array
+
+**Problem Statement:**  
+Given an integer array `nums` sorted in ascending order (with distinct values) and a target value `k`, the array is rotated at some unknown pivot.
+
+Find the index of `k` in the array. If `k` is not present, return `-1`.
+
+### Example 1
+
+**Input:**  
+
+```text
+nums = [4, 5, 6, 7, 0, 1, 2]
+k = 0
+```
+
+**Output:**  
+
+```text
+4
+```
+
+**Explanation:**  
+
+The target value `0` is present in the array at index `4`.
+
+### Example 2
+
+**Input:**  
+
+```text
+nums = [4, 5, 6, 7, 0, 1, 2]
+k = 3
+```
+
+**Output:**  
+
+```text
+-1
+```
+
+**Explanation:**  
+
+The target value `3` is not present in the array, so the answer is `-1`.
