@@ -465,3 +465,51 @@ false
 **Explanation:**  
 
 The element `10` is not present in the array. Therefore, the answer is `false`.
+
+---
+
+## [Problem 10: Minimum in Rotated Sorted Array](Problem10.java)
+
+**Leetcode**  
+https://leetcode.com/problems/find-minimum-in-rotated-sorted-array
+
+**Problem Statement:**  
+Given an integer array `arr` of size `N`, sorted in ascending order with distinct values, the array is rotated at an unknown index.
+
+Find the minimum element in the array.
+
+### Example 1
+
+**Input:**  
+
+```text
+arr = [4, 5, 6, 7, 0, 1, 2, 3]
+```
+
+**Output:**  
+
+```text
+0
+```
+
+**Explanation:**  
+
+The minimum element in the array is `0`.
+
+### Example 2
+
+**Input:**  
+
+```text
+arr = [3, 4, 5, 1, 2]
+```
+
+**Output:**  
+
+```text
+1
+```
+
+**Explanation:**  
+
+The minimum element in the array is `1`.
