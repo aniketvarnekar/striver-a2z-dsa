@@ -415,3 +415,53 @@ k = 3
 **Explanation:**  
 
 The target value `3` is not present in the array, so the answer is `-1`.
+
+---
+
+## [Problem 09: Search Element in Rotated Sorted Array II](Problem09.java)
+
+**Leetcode**  
+https://leetcode.com/problems/search-in-rotated-sorted-array-ii
+
+**Problem Statement:**  
+Given an integer array `arr` of size `N`, sorted in ascending order (may contain duplicate values), and a target value `k`.
+
+The array is rotated at some pivot point unknown to you. Return `true` if `k` is present in the array; otherwise, return `false`.
+
+### Example 1
+
+**Input:**  
+
+```text
+arr = [7, 8, 1, 2, 3, 3, 3, 4, 5, 6]
+k = 3
+```
+
+**Output:**  
+
+```text
+true
+```
+
+**Explanation:**  
+
+The element `3` is present in the array. Therefore, the answer is `true`.
+
+### Example 2
+
+**Input:**  
+
+```text
+arr = [7, 8, 1, 2, 3, 3, 3, 4, 5, 6]
+k = 10
+```
+
+**Output:**  
+
+```text
+false
+```
+
+**Explanation:**  
+
+The element `10` is not present in the array. Therefore, the answer is `false`.
