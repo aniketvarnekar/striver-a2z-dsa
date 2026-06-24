@@ -513,3 +513,64 @@ arr = [3, 4, 5, 1, 2]
 **Explanation:**  
 
 The minimum element in the array is `1`.
+
+---
+
+## [Problem 11: Find Out How Many Times the Array Has Been Rotated](Problem11.java)
+
+**Problem Statement:**  
+Given an integer array `arr` of size `N`, sorted in ascending order with distinct values. The array has been rotated between `1` and `N` times, but the number of rotations is unknown.
+
+Find how many times the array has been rotated.
+
+### Example 1
+
+**Input:**  
+
+```text
+arr = [4, 5, 6, 7, 0, 1, 2, 3]
+```
+
+**Output:**  
+
+```text
+4
+```
+
+**Explanation:**  
+
+The original sorted array is:
+
+```text
+[0, 1, 2, 3, 4, 5, 6, 7]
+```
+
+The minimum element `0` is at index `4`.
+
+Therefore, the array has been rotated `4` times.
+
+### Example 2
+
+**Input:**  
+
+```text
+arr = [3, 4, 5, 1, 2]
+```
+
+**Output:**  
+
+```text
+3
+```
+
+**Explanation:**  
+
+The original sorted array is:
+
+```text
+[1, 2, 3, 4, 5]
+```
+
+The minimum element `1` is at index `3`.
+
+Therefore, the array has been rotated `3` times.
