@@ -574,3 +574,51 @@ The original sorted array is:
 The minimum element `1` is at index `3`.
 
 Therefore, the array has been rotated `3` times.
+
+---
+
+## [Problem 12: Search Single Element in a Sorted Array](Problem12.java)
+
+**Leetcode**  
+https://leetcode.com/problems/single-element-in-a-sorted-array
+
+**Problem Statement:**  
+Given a sorted array of `N` integers where every element appears exactly twice except for one element, find the single element that appears only once.
+
+### Example 1
+
+**Input:**  
+
+```text
+arr[] = {1, 1, 2, 2, 3, 3, 4, 5, 5, 6, 6}
+```
+
+**Output:**  
+
+```text
+4
+```
+
+**Explanation:**  
+
+Only the number `4` appears once in the array.
+
+### Example 2
+
+**Input:**  
+
+```text
+arr[] = {1, 1, 3, 5, 5}
+```
+
+**Output:**  
+
+```text
+3
+```
+
+**Explanation:**  
+
+Only the number `3` appears once in the array.
+
+
