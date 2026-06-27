@@ -1,4 +1,4 @@
-# 08 — Binary Search [Easy]
+# 09 — Binary Search [Easy]
 
 ## [Problem 01: Binary Search](Problem01.java)
 
