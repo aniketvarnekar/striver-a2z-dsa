@@ -621,4 +621,61 @@ arr[] = {1, 1, 3, 5, 5}
 
 Only the number `3` appears once in the array.
 
+---
 
+## [Problem 13: Peak Element in Array](Problem13.java)
+
+**Leetcode**  
+https://leetcode.com/problems/find-peak-element
+
+**Problem Statement:**  
+Given an array `arr` of length `N`, a peak element is an element that is strictly greater than both of its neighbors.
+
+Formally, if `arr[i]` is a peak element, then:
+
+```text
+arr[i - 1] < arr[i] and arr[i + 1] < arr[i]
+```
+
+Find the index (0-based) of any peak element in the array. If there are multiple peak elements, return the index of any one of them.
+
+### Example 1
+
+**Input:**  
+
+```text
+arr[] = {1, 2, 3, 4, 5, 6, 7, 8, 5, 1}
+```
+
+**Output:**  
+
+```text
+7
+```
+
+**Explanation:**  
+
+The only peak element is `8`, which is located at index `7`.
+
+### Example 2
+
+**Input:**  
+
+```text
+arr[] = {1, 2, 1, 3, 5, 6, 4}
+```
+
+**Output:**  
+
+```text
+1
+```
+
+**Explanation:**  
+
+There are two peak elements:
+
+- `2` at index `1`
+- `6` at index `5`
+
+Returning the index of either peak is correct.
