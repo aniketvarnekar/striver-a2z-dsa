@@ -166,3 +166,68 @@ h = 5
 If Koko eats `25` bananas per hour, each pile is finished in `1` hour.
 
 Therefore, the total time required is `5` hours.
+
+---
+
+## [Problem 17: Minimum Days to Make M Bouquets](Problem17.java)
+
+**Leetcode**  
+https://leetcode.com/problems/minimum-number-of-days-to-make-m-bouquets
+
+**Problem Statement:**  
+You are given `N` roses and an array `arr`, where `arr[i]` represents the day on which the `i`th rose blooms.
+
+You can only pick adjacent bloomed roses to make a bouquet. Each bouquet must contain exactly `k` adjacent bloomed roses.
+
+Find the minimum number of days required to make at least `m` bouquets. If it is impossible to make the required bouquets, return `-1`.
+
+### Example 1
+
+**Input:**  
+
+```text
+N = 8
+arr[] = {7, 7, 7, 7, 13, 11, 12, 7}
+m = 2
+k = 3
+```
+
+**Output:**  
+
+```text
+12
+```
+
+**Explanation:**  
+
+On day `12`, the first `4` flowers and the last `3` flowers have bloomed.
+
+We can make:
+
+- One bouquet using the first `3` flowers.
+- Another bouquet using the last `3` flowers.
+
+Hence, the minimum number of days required is `12`.
+
+### Example 2
+
+**Input:**  
+
+```text
+N = 5
+arr[] = {1, 10, 3, 10, 2}
+m = 3
+k = 2
+```
+
+**Output:**  
+
+```text
+-1
+```
+
+**Explanation:**  
+
+To make `3` bouquets of `2` flowers each, we need at least `6` flowers.
+
+Since only `5` flowers are available, it is impossible to make the required bouquets.
