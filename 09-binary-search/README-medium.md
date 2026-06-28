@@ -103,3 +103,66 @@ M = 69
 There is no integer whose 4th power is `69`.
 
 Therefore, the answer is `-1`.
+
+---
+
+## [Problem 16: Koko Eating Bananas](Problem16.java)
+
+**Leetcode**  
+https://leetcode.com/problems/koko-eating-bananas
+
+**Problem Statement:**  
+A monkey Koko is given `N` piles of bananas, where the `i`th pile contains `a[i]` bananas. An integer `h` is also given, representing the total number of hours available to eat all the bananas.
+
+Each hour, Koko chooses a non-empty pile and eats `k` bananas from it. If the pile contains fewer than `k` bananas, Koko eats all the bananas in that pile and does not eat from any other pile during that hour.
+
+Find the minimum integer value of `k` such that Koko can finish all the bananas within `h` hours.
+
+### Example 1
+
+**Input:**  
+
+```text
+N = 4
+a[] = {7, 15, 6, 3}
+h = 8
+```
+
+**Output:**  
+
+```text
+5
+```
+
+**Explanation:**  
+
+If Koko eats `5` bananas per hour, she will take:
+
+- 2 hours for pile `7`
+- 3 hours for pile `15`
+- 2 hours for pile `6`
+- 1 hour for pile `3`
+
+Total time = `2 + 3 + 2 + 1 = 8` hours.
+
+### Example 2
+
+**Input:**  
+
+```text
+N = 5
+a[] = {25, 12, 8, 14, 19}
+h = 5
+```
+
+**Output:**  
+
+```text
+25
+```
+
+**Explanation:**  
+
+If Koko eats `25` bananas per hour, each pile is finished in `1` hour.
+
+Therefore, the total time required is `5` hours.
