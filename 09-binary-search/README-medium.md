@@ -231,3 +231,74 @@ k = 2
 To make `3` bouquets of `2` flowers each, we need at least `6` flowers.
 
 Since only `5` flowers are available, it is impossible to make the required bouquets.
+
+---
+
+## [Problem 18: Find the Smallest Divisor Given a Threshold](Problem18.java)
+
+**Leetcode**  
+https://leetcode.com/problems/find-the-smallest-divisor-given-a-threshold
+
+**Problem Statement:**  
+You are given an array of integers `arr` and an integer `limit`.
+
+Find the smallest positive integer divisor such that, after dividing every element of the array by the divisor and rounding each result up to the nearest integer, the sum of these values is less than or equal to `limit`.
+
+### Example 1
+
+**Input:**  
+
+```text
+N = 5
+arr[] = {1, 2, 3, 4, 5}
+limit = 8
+```
+
+**Output:**  
+
+```text
+3
+```
+
+**Explanation:**  
+
+- Divisor `1` gives sum = `1 + 2 + 3 + 4 + 5 = 15`
+- Divisor `2` gives sum = `1 + 1 + 2 + 2 + 3 = 9`
+- Divisor `3` gives:
+
+```text
+ceil(1/3) + ceil(2/3) + ceil(3/3) + ceil(4/3) + ceil(5/3)
+= 1 + 1 + 1 + 2 + 2
+= 7
+```
+
+Since `7 ≤ 8`, the smallest possible divisor is `3`.
+
+### Example 2
+
+**Input:**  
+
+```text
+N = 4
+arr[] = {8, 4, 2, 3}
+limit = 10
+```
+
+**Output:**  
+
+```text
+2
+```
+
+**Explanation:**  
+
+- Divisor `1` gives sum = `17`
+- Divisor `2` gives:
+
+```text
+ceil(8/2) + ceil(4/2) + ceil(2/2) + ceil(3/2)
+= 4 + 2 + 1 + 2
+= 9
+```
+
+Since `9 ≤ 10`, the smallest possible divisor is `2`.
