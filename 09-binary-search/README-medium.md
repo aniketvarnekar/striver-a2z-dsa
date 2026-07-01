@@ -302,3 +302,62 @@ ceil(8/2) + ceil(4/2) + ceil(2/2) + ceil(3/2)
 ```
 
 Since `9 ≤ 10`, the smallest possible divisor is `2`.
+
+---
+
+## [Problem 19: Capacity to Ship Packages within D Days](Problem19.java)
+
+**Leetcode**  
+https://leetcode.com/problems/capacity-to-ship-packages-within-d-days
+
+**Problem Statement:**  
+You are the owner of a shipment company. Packages must be shipped from one port to another within `d` days.
+
+The weights of the packages are given in the array `weights`. Packages are loaded onto the ship in the same order as they appear in the array. The total weight loaded on a ship in a single day must not exceed the ship's maximum capacity.
+
+Find the minimum ship capacity required to ship all the packages within `d` days.
+
+### Example 1
+
+**Input:**  
+
+```text
+N = 8
+weights = [5, 4, 5, 2, 3, 4, 5, 6]
+d = 5
+```
+
+**Output:**  
+
+```text
+9
+```
+
+**Explanation:**  
+
+The minimum ship capacity required to ship all the packages within `5` days is `9`.
+
+### Example 2
+
+**Input:**  
+
+```text
+N = 5
+weights = [1, 2, 3, 4, 5]
+d = 2
+```
+
+**Output:**  
+
+```text
+9
+```
+
+**Explanation:**  
+
+With a ship capacity of `9`, the packages can be shipped in `2` days as:
+
+```text
+Day 1: [1, 2, 3, 4]
+Day 2: [5]
+```
