@@ -423,3 +423,81 @@ The missing positive integers are:
 ```
 
 Since `k = 4`, the fourth missing positive integer is `5`.
+
+---
+
+## [Problem 21: Aggressive Cows](Problem21.java)
+
+**Leetcode**  
+https://leetcode.com/problems/magnetic-force-between-two-balls
+
+**Problem Statement:**  
+You are given an array `arr` of size `N` representing the positions of stalls and an integer `k` representing the number of aggressive cows.
+
+Assign the `k` cows to the stalls such that the minimum distance between any two cows is as large as possible.
+
+Return the maximum possible minimum distance.
+
+### Example 1
+
+**Input:**  
+
+```text
+N = 6
+k = 4
+arr[] = {0, 3, 4, 7, 10, 9}
+```
+
+**Output:**  
+
+```text
+3
+```
+
+**Explanation:**  
+
+The stalls after sorting are:
+
+```text
+{0, 3, 4, 7, 9, 10}
+```
+
+One optimal placement is:
+
+```text
+{0, 3, 7, 10}
+```
+
+The distances between consecutive cows are:
+
+```text
+3, 4, 3
+```
+
+Therefore, the maximum possible minimum distance is `3`.
+
+### Example 2
+
+**Input:**  
+
+```text
+N = 5
+k = 2
+arr[] = {4, 2, 1, 3, 6}
+```
+
+**Output:**  
+
+```text
+5
+```
+
+**Explanation:**  
+
+After sorting, the stalls become:
+
+```text
+{1, 2, 3, 4, 6}
+```
+
+Placing the two cows at positions `1` and `6` gives a minimum distance of `5`, which is the maximum possible.
