@@ -361,3 +361,65 @@ With a ship capacity of `9`, the packages can be shipped in `2` days as:
 Day 1: [1, 2, 3, 4]
 Day 2: [5]
 ```
+
+---
+
+## [Problem 20: Kth Missing Positive Number](Problem20.java)
+
+**Leetcode**  
+https://leetcode.com/problems/kth-missing-positive-number
+
+**Problem Statement:**  
+You are given a strictly increasing array `vec` of positive integers and a positive integer `k`.
+
+Find the `k`th positive integer that is missing from the array.
+
+### Example 1
+
+**Input:**  
+
+```text
+vec[] = {4, 7, 9, 10}
+k = 1
+```
+
+**Output:**  
+
+```text
+1
+```
+
+**Explanation:**  
+
+The missing positive integers are:
+
+```text
+1, 2, 3, 5, 6, 8, 11, 12, ...
+```
+
+Since `k = 1`, the first missing positive integer is `1`.
+
+### Example 2
+
+**Input:**  
+
+```text
+vec[] = {4, 7, 9, 10}
+k = 4
+```
+
+**Output:**  
+
+```text
+5
+```
+
+**Explanation:**  
+
+The missing positive integers are:
+
+```text
+1, 2, 3, 5, 6, 8, 11, 12, ...
+```
+
+Since `k = 4`, the fourth missing positive integer is `5`.
