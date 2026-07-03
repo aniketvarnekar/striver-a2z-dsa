@@ -501,3 +501,70 @@ After sorting, the stalls become:
 ```
 
 Placing the two cows at positions `1` and `6` gives a minimum distance of `5`, which is the maximum possible.
+
+---
+
+## [Problem 22: Allocate Minimum Number of Pages](Problem22.java)
+
+**Problem Statement:**  
+Given an array `arr` where `arr[i]` represents the number of pages in the `i`th book and an integer `m` representing the number of students, allocate all the books among the students such that:
+
+- Each student gets at least one book.
+- Each book is allocated to exactly one student.
+- Books allocated to a student must be contiguous.
+
+Find the minimum possible value of the maximum number of pages assigned to any student. If it is not possible to allocate the books, return `-1`.
+
+### Example 1
+
+**Input:**  
+
+```text
+n = 4
+m = 2
+arr[] = {12, 34, 67, 90}
+```
+
+**Output:**  
+
+```text
+113
+```
+
+**Explanation:**  
+
+The books can be allocated as:
+
+```text
+12, 34, 67 | 90
+```
+
+The first student gets `113` pages and the second student gets `90` pages.
+
+Therefore, the minimum possible maximum number of pages assigned to a student is `113`.
+
+### Example 2
+
+**Input:**  
+
+```text
+n = 5
+m = 4
+arr[] = {25, 46, 28, 49, 24}
+```
+
+**Output:**  
+
+```text
+71
+```
+
+**Explanation:**  
+
+The books can be allocated as:
+
+```text
+25, 46 | 28 | 49 | 24
+```
+
+The maximum number of pages assigned to any student is `71`, which is the minimum possible.
