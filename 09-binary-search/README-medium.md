@@ -568,3 +568,83 @@ The books can be allocated as:
 ```
 
 The maximum number of pages assigned to any student is `71`, which is the minimum possible.
+
+---
+
+## [Problem 23: Split Array Largest Sum](Problem23.java)
+
+**Leetcode**  
+https://leetcode.com/problems/split-array-largest-sum
+
+**Problem Statement:**  
+Given an integer array `nums` and an integer `k`, split the array into `k` non-empty contiguous subarrays such that the largest sum among these subarrays is minimized.
+
+Return the minimum possible value of the largest subarray sum.
+
+A subarray is a contiguous part of the array.
+
+### Example 1
+
+**Input:**  
+
+```text
+nums = [7, 2, 5, 10, 8]
+k = 2
+```
+
+**Output:**  
+
+```text
+18
+```
+
+**Explanation:**  
+
+There are four possible ways to split the array into two subarrays.
+
+The optimal split is:
+
+```text
+[7, 2, 5] | [10, 8]
+```
+
+The subarray sums are:
+
+```text
+14, 18
+```
+
+The largest sum is `18`, which is the minimum possible.
+
+### Example 2
+
+**Input:**  
+
+```text
+nums = [1, 2, 3, 4, 5]
+k = 2
+```
+
+**Output:**  
+
+```text
+9
+```
+
+**Explanation:**  
+
+There are four possible ways to split the array into two subarrays.
+
+The optimal split is:
+
+```text
+[1, 2, 3] | [4, 5]
+```
+
+The subarray sums are:
+
+```text
+6, 9
+```
+
+The largest sum is `9`, which is the minimum possible.
