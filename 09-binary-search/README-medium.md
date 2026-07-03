@@ -648,3 +648,70 @@ The subarray sums are:
 ```
 
 The largest sum is `9`, which is the minimum possible.
+
+---
+
+## [Problem 24: Painter's Partition Problem](Problem24.java)
+
+**Problem Statement:**  
+You are given an array `boards` of length `N`, where `boards[i]` represents the length of the `i`th board. There are `K` painters available to paint these boards.
+
+Each unit length of a board takes `1` unit of time to paint. Every painter can paint only contiguous boards, and a board cannot be divided between multiple painters.
+
+Find the minimum time required to paint all the boards.
+
+### Example 1
+
+**Input:**  
+
+```text
+N = 4
+boards[] = {5, 5, 5, 5}
+k = 2
+```
+
+**Output:**  
+
+```text
+10
+```
+
+**Explanation:**  
+
+The boards can be divided as:
+
+```text
+{5, 5} | {5, 5}
+```
+
+Each painter paints `10` units.
+
+Therefore, the minimum time required is `10`.
+
+### Example 2
+
+**Input:**  
+
+```text
+N = 4
+boards[] = {10, 20, 30, 40}
+k = 2
+```
+
+**Output:**  
+
+```text
+60
+```
+
+**Explanation:**  
+
+The boards can be divided as:
+
+```text
+{10, 20, 30} | {40}
+```
+
+The first painter paints `60` units and the second painter paints `40` units.
+
+Hence, the minimum time required is `60`.
