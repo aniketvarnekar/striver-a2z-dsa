@@ -715,3 +715,80 @@ The boards can be divided as:
 The first painter paints `60` units and the second painter paints `40` units.
 
 Hence, the minimum time required is `60`.
+
+---
+
+## [Problem 25: Minimise Maximum Distance between Gas Stations](Problem25.java)
+
+**Problem Statement:**  
+You are given a sorted array `arr` of length `N`, where `arr[i]` represents the position of the `i`th gas station on the X-axis. You are also given an integer `k`, representing the number of new gas stations to be added.
+
+You may place the new gas stations anywhere on the non-negative side of the X-axis, including non-integer positions.
+
+After adding the `k` gas stations, let `dist` be the maximum distance between any two adjacent gas stations.
+
+Find the minimum possible value of `dist`.
+
+### Example 1
+
+**Input:**  
+
+```text
+N = 5
+arr[] = {1, 2, 3, 4, 5}
+k = 4
+```
+
+**Output:**  
+
+```text
+0.5
+```
+
+**Explanation:**  
+
+One optimal placement is:
+
+```text
+{1, 1.5, 2, 2.5, 3, 3.5, 4, 4.5, 5}
+```
+
+The maximum distance between adjacent gas stations becomes:
+
+```text
+0.5
+```
+
+It can be shown that no arrangement can produce a smaller maximum distance.
+
+### Example 2
+
+**Input:**  
+
+```text
+N = 10
+arr[] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10}
+k = 1
+```
+
+**Output:**  
+
+```text
+1.0
+```
+
+**Explanation:**  
+
+One possible placement is:
+
+```text
+{1, 1.5, 2, 3, 4, 5, 6, 7, 8, 9, 10}
+```
+
+The maximum distance between adjacent gas stations is still:
+
+```text
+1.0
+```
+
+It is impossible to reduce the maximum adjacent distance below `1.0` by adding only one gas station.
