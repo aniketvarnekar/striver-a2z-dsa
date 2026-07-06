@@ -792,3 +792,73 @@ The maximum distance between adjacent gas stations is still:
 ```
 
 It is impossible to reduce the maximum adjacent distance below `1.0` by adding only one gas station.
+
+---
+
+## [Problem 26: Median of Two Sorted Arrays](Problem26.java)
+
+**Leetcode** 
+https://leetcode.com/problems/median-of-two-sorted-arrays
+
+**Problem Statement:**  
+Given two sorted arrays `nums1` and `nums2` of sizes `m` and `n` respectively, return the median of the two sorted arrays.
+
+The overall runtime complexity should be **O(log(m + n))**.
+
+The median is the middle element of the combined sorted array. If the total number of elements is even, the median is the average of the two middle elements.
+
+### Example 1
+
+**Input:**  
+
+```text
+nums1 = [1, 3]
+nums2 = [2]
+```
+
+**Output:**  
+
+```text
+2.00000
+```
+
+**Explanation:**  
+
+The merged sorted array is:
+
+```text
+[1, 2, 3]
+```
+
+The middle element is `2`, so the median is `2.00000`.
+
+### Example 2
+
+**Input:**  
+
+```text
+nums1 = [1, 2]
+nums2 = [3, 4]
+```
+
+**Output:**  
+
+```text
+2.50000
+```
+
+**Explanation:**  
+
+The merged sorted array is:
+
+```text
+[1, 2, 3, 4]
+```
+
+The two middle elements are `2` and `3`.
+
+Median:
+
+```text
+(2 + 3) / 2 = 2.5
+```
