@@ -862,3 +862,64 @@ Median:
 ```text
 (2 + 3) / 2 = 2.5
 ```
+
+---
+
+## [Problem 27: K-th Element of Two Sorted Arrays](Problem27.java)
+
+**Problem Statement:**  
+Given two sorted arrays `a` and `b` of sizes `m` and `n` respectively, and an integer `k`, find the `k`th smallest element in the merged sorted array.
+
+The overall runtime complexity should be **O(log(min(m, n)))**.
+
+### Example 1
+
+**Input:**  
+
+```text
+a = [2, 3, 6, 7, 9]
+b = [1, 4, 8, 10]
+k = 5
+```
+
+**Output:**  
+
+```text
+6
+```
+
+**Explanation:**  
+
+The merged sorted array is:
+
+```text
+[1, 2, 3, 4, 6, 7, 8, 9, 10]
+```
+
+The `5`th smallest element is `6`.
+
+### Example 2
+
+**Input:**  
+
+```text
+a = [100, 112, 256, 349, 770]
+b = [72, 86, 113, 119, 265, 445, 892]
+k = 7
+```
+
+**Output:**  
+
+```text
+256
+```
+
+**Explanation:**  
+
+The merged sorted array is:
+
+```text
+[72, 86, 100, 112, 113, 119, 256, 265, 349, 445, 770, 892]
+```
+
+The `7`th smallest element is `256`.
