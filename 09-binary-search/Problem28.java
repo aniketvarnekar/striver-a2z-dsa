@@ -10,7 +10,7 @@ public class Problem28 {
      * Time Complexity: O(M * log N)
      * Space Complexity: O(1)
      */
-    private static int findRowWithMaximumOnes(int[][] matrix) {
+    private static int findRowWithMaximumOnesV1(int[][] matrix) {
         int m = matrix.length;
         int n = matrix[0].length;
 
@@ -64,6 +64,45 @@ public class Problem28 {
         return result;
     }
 
+    /**
+     * Finds the index of the row containing the
+     * maximum number of 1s using the top-right
+     * traversal technique.
+     *
+     * Since each row is sorted, moving left
+     * indicates more 1s in the current row,
+     * while moving down skips rows that cannot
+     * have more 1s.
+     *
+     * Time Complexity: O(M + N)
+     * Space Complexity: O(1)
+     */
+    private static int findRowWithMaximumOnesV2(int[][] matrix) {
+        int m = matrix.length;
+        int n = matrix[0].length;
+
+        // Start from the top-right corner
+        int row = 0;
+        int column = n - 1;
+        int rowIndex = -1;
+
+        while (row < m && column >= 0) {
+            // Found a 1, so this row has at least
+            // (n - column) ones. Move left to check
+            // if there are more 1s in the same row.            
+            if (matrix[row][column] == 1) {
+                rowIndex = row;
+                column--;
+            } 
+            // Found a 0, move to the next row.            
+            else {
+                row++;
+            }
+        }
+
+        return rowIndex;
+    }
+
     public static void main(String[] args) {
         int[][] matrix = new int[][] {
             {1, 1, 1},
@@ -71,8 +110,11 @@ public class Problem28 {
             {0, 0, 0}
         };
         
-        int result = findRowWithMaximumOnes(matrix);
-        System.out.println(result);
+        int result1 = findRowWithMaximumOnesV1(matrix);
+        System.out.println(result1);
+
+        int result2 = findRowWithMaximumOnesV2(matrix);
+        System.out.println(result2);
     }
 
 }
