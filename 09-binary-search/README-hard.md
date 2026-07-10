@@ -126,3 +126,72 @@ false
 **Explanation:**  
 
 The value `13` is not present in the matrix.
+
+---
+
+## [Problem 30: Search a 2D Matrix II](Problem30.java)
+
+**Leetcode**  
+https://leetcode.com/problems/search-a-2d-matrix-ii
+
+**Problem Statement:**  
+You are given an `m × n` integer matrix `matrix` with the following properties:
+
+- Each row is sorted in ascending order from left to right.
+- Each column is sorted in ascending order from top to bottom.
+
+Given an integer `target`, return `true` if the target exists in the matrix; otherwise, return `false`.
+
+### Example 1
+
+**Input:**  
+
+```text
+matrix =
+[
+  [1, 4, 7, 11, 15],
+  [2, 5, 8, 12, 19],
+  [3, 6, 9, 16, 22],
+  [10, 13, 14, 17, 24],
+  [18, 21, 23, 26, 30]
+]
+
+target = 5
+```
+
+**Output:**  
+
+```text
+true
+```
+
+**Explanation:**  
+
+The value `5` is present in the matrix.
+
+### Example 2
+
+**Input:**  
+
+```text
+matrix =
+[
+  [1, 4, 7, 11, 15],
+  [2, 5, 8, 12, 19],
+  [3, 6, 9, 16, 22],
+  [10, 13, 14, 17, 24],
+  [18, 21, 23, 26, 30]
+]
+
+target = 20
+```
+
+**Output:**  
+
+```text
+false
+```
+
+**Explanation:**  
+
+The value `20` is not present in the matrix.
