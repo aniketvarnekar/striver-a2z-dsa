@@ -280,3 +280,74 @@ Right  = 14
 Therefore, `[1, 1]` is a valid peak position.
 
 The value `32` is also a peak, so `[2, 2]` is another acceptable answer.
+
+---
+
+## [Problem 32: Median of Row Wise Sorted Matrix](Problem32.java)
+
+**Problem Statement:**  
+Given an `M × N` matrix where each row is sorted in non-decreasing order, find the median of the matrix.
+
+It is guaranteed that `M × N` is odd.
+
+Your solution should use **O(1)** extra space and should not flatten or sort the entire matrix.
+
+### Example 1
+
+**Input:**  
+
+```text
+M = 3
+N = 3
+
+matrix =
+1 4 9
+2 5 6
+3 7 8
+```
+
+**Output:**  
+
+```text
+5
+```
+
+**Explanation:**  
+
+The sorted order of all elements is:
+
+```text
+[1, 2, 3, 4, 5, 6, 7, 8, 9]
+```
+
+The middle element is `5`, so the median is `5`.
+
+### Example 2
+
+**Input:**  
+
+```text
+M = 3
+N = 3
+
+matrix =
+1 3 8
+2 3 4
+1 2 5
+```
+
+**Output:**  
+
+```text
+3
+```
+
+**Explanation:**  
+
+The sorted order of all elements is:
+
+```text
+[1, 1, 2, 2, 3, 3, 4, 5, 8]
+```
+
+The middle element is `3`, so the median is `3`.
