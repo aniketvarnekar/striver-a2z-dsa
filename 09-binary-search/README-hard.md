@@ -195,3 +195,88 @@ false
 **Explanation:**  
 
 The value `20` is not present in the matrix.
+
+---
+
+## [Problem 31: Find a Peak Element II](Problem31.java)
+
+**Leetcode**  
+https://leetcode.com/problems/find-a-peak-element-ii
+
+**Problem Statement:**  
+You are given a `0`-indexed `m × n` matrix `mat` in which no two adjacent cells are equal.
+
+A cell is considered a **peak** if it is strictly greater than all of its adjacent neighbors (left, right, top, and bottom).
+
+The matrix is surrounded by an imaginary border of `-1`s.
+
+Return the position `[row, col]` of **any** peak element.
+
+Your solution must run in **O(m log n)** or **O(n log m)** time.
+
+### Example 1
+
+**Input:**  
+
+```text
+mat =
+[
+  [1, 4],
+  [3, 2]
+]
+```
+
+**Output:**  
+
+```text
+[0, 1]
+```
+
+**Explanation:**  
+
+The value `4` is greater than its adjacent neighbors:
+
+```text
+Left   = 1
+Bottom = 2
+Top    = -1
+Right  = -1
+```
+
+Hence, `[0, 1]` is a valid peak position.
+
+The value `3` is also a peak, so `[1, 0]` is another valid answer.
+
+### Example 2
+
+**Input:**  
+
+```text
+mat =
+[
+  [10, 20, 15],
+  [21, 30, 14],
+  [7, 16, 32]
+]
+```
+
+**Output:**  
+
+```text
+[1, 1]
+```
+
+**Explanation:**  
+
+The value `30` is greater than all of its adjacent neighbors:
+
+```text
+Top    = 20
+Bottom = 16
+Left   = 21
+Right  = 14
+```
+
+Therefore, `[1, 1]` is a valid peak position.
+
+The value `32` is also a peak, so `[2, 2]` is another acceptable answer.
