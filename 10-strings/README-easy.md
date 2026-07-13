@@ -179,3 +179,75 @@ s = "a good   example"
 **Explanation:**  
 
 Multiple spaces between words are reduced to a single space in the reversed string.
+
+---
+
+## [Problem 03: Largest Odd Number in a String](Problem03.java)
+
+**Leetcode**  
+https://leetcode.com/problems/largest-odd-number-in-string
+
+**Problem Statement:**  
+Given a string `s` representing a large integer, return the largest-valued odd integer (as a string) that is a substring of `s`.
+
+The returned number should **not contain leading zeros**, although the input string may contain leading zeros.
+
+If no odd-valued substring exists, return an empty string `""`.
+
+### Example 1
+
+**Input:**  
+
+```text
+s = "5347"
+```
+
+**Output:**  
+
+```text
+"5347"
+```
+
+**Explanation:**  
+
+The odd-valued substrings include:
+
+```text
+5, 3, 53, 347, 5347
+```
+
+The largest odd number without leading zeros is:
+
+```text
+5347
+```
+
+### Example 2
+
+**Input:**  
+
+```text
+s = "0214638"
+```
+
+**Output:**  
+
+```text
+"21463"
+```
+
+**Explanation:**  
+
+The odd-valued substrings include:
+
+```text
+1, 3, 21, 63, 463, 1463, 21463
+```
+
+Substrings starting with `0` are not considered valid because the result cannot contain leading zeros.
+
+Therefore, the largest valid odd number is:
+
+```text
+21463
+```
