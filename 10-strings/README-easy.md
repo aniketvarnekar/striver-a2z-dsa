@@ -251,3 +251,51 @@ Therefore, the largest valid odd number is:
 ```text
 21463
 ```
+
+---
+
+## [Problem 4: Longest Common Prefix](Problem04.java)
+
+**Leetcode**  
+https://leetcode.com/problems/longest-common-prefix
+
+**Problem Statement:**  
+Given an array of strings `strs`, return the longest common prefix shared among all the strings.
+
+If there is no common prefix, return an empty string `""`.
+
+### Example 1
+
+**Input:**  
+
+```text
+strs = ["flower", "flow", "flight"]
+```
+
+**Output:**  
+
+```text
+"fl"
+```
+
+**Explanation:**  
+
+The longest prefix common to all the strings is `"fl"`.
+
+### Example 2
+
+**Input:**  
+
+```text
+strs = ["dog", "racecar", "car"]
+```
+
+**Output:**  
+
+```text
+""
+```
+
+**Explanation:**  
+
+There is no common prefix shared by all the strings, so the answer is an empty string.
