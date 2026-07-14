@@ -390,3 +390,61 @@ r → e
 ```
 
 The mapping is one-to-one and consistent.
+
+---
+
+## [Problem 06: Rotate String](Problem06.java)
+
+**Leetcode**  
+https://leetcode.com/problems/rotate-string
+
+**Problem Statement:**  
+Given two strings `s` and `goal`, return `true` if and only if `s` can become `goal` after performing any number of left shifts on `s`.
+
+A **left shift** moves the leftmost character of the string to the rightmost position.
+
+### Example 1
+
+**Input:**  
+
+```text
+s = "abcde"
+goal = "cdeab"
+```
+
+**Output:**  
+
+```text
+true
+```
+
+**Explanation:**  
+
+Perform two left shifts:
+
+```text
+abcde
+→ bcdea
+→ cdeab
+```
+
+The string becomes equal to `goal`.
+
+### Example 2
+
+**Input:**  
+
+```text
+s = "abcde"
+goal = "abced"
+```
+
+**Output:**  
+
+```text
+false
+```
+
+**Explanation:**  
+
+No sequence of left shifts can transform `s` into `goal`.
