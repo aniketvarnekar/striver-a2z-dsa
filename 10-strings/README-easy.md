@@ -299,3 +299,94 @@ strs = ["dog", "racecar", "car"]
 **Explanation:**  
 
 There is no common prefix shared by all the strings, so the answer is an empty string.
+
+---
+
+## [Problem 05: Isomorphic Strings](Problem05.java)
+
+**Leetcode**  
+https://leetcode.com/problems/isomorphic-strings
+
+**Problem Statement:**  
+Given two strings `s` and `t`, determine whether they are **isomorphic**.
+
+Two strings are isomorphic if the characters in `s` can be replaced to obtain `t`.
+
+- Every occurrence of a character must be replaced with the same character.
+- No two different characters may map to the same character.
+- A character may map to itself.
+
+Return `true` if the strings are isomorphic; otherwise, return `false`.
+
+### Example 1
+
+**Input:**  
+
+```text
+s = "egg"
+t = "add"
+```
+
+**Output:**  
+
+```text
+true
+```
+
+**Explanation:**  
+
+A valid mapping is:
+
+```text
+e → a
+g → d
+```
+
+The mapping is consistent and one-to-one.
+
+### Example 2
+
+**Input:**  
+
+```text
+s = "f11"
+t = "b23"
+```
+
+**Output:**  
+
+```text
+false
+```
+
+**Explanation:**  
+
+The character `'1'` would need to map to both `'2'` and `'3'`, which is not allowed.
+
+### Example 3
+
+**Input:**  
+
+```text
+s = "paper"
+t = "title"
+```
+
+**Output:**  
+
+```text
+true
+```
+
+**Explanation:**  
+
+A valid mapping is:
+
+```text
+p → t
+a → i
+e → l
+r → e
+```
+
+The mapping is one-to-one and consistent.
