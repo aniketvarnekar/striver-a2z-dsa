@@ -448,3 +448,53 @@ false
 **Explanation:**  
 
 No sequence of left shifts can transform `s` into `goal`.
+
+---
+
+## [Problem 07: Valid Anagram](Problem07.java)
+
+**Leetcode**  
+https://leetcode.com/problems/valid-anagram
+
+**Problem Statement:**  
+Given two strings `s` and `t`, return `true` if `t` is an **anagram** of `s`; otherwise, return `false`.
+
+An **anagram** is a word or phrase formed by rearranging the letters of another word, using all the original characters exactly once.
+
+### Example 1
+
+**Input:**  
+
+```text
+s = "anagram"
+t = "nagaram"
+```
+
+**Output:**  
+
+```text
+true
+```
+
+**Explanation:**  
+
+Both strings contain the same characters with the same frequencies, so `t` is an anagram of `s`.
+
+### Example 2
+
+**Input:**  
+
+```text
+s = "rat"
+t = "car"
+```
+
+**Output:**  
+
+```text
+false
+```
+
+**Explanation:**  
+
+The two strings do not contain the same set of characters, so `t` is not an anagram of `s`.
