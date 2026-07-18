@@ -229,3 +229,74 @@ IV = 4
 ```
 
 Therefore, `MCMXCIV = 1000 + 900 + 90 + 4 = 1994`.
+
+---
+
+## [Problem 11: String to Integer (atoi)](Problem11.java)
+
+**Leetcode**  
+https://leetcode.com/problems/string-to-integer-atoi
+
+**Problem Statement:**  
+Implement the `myAtoi(String s)` function, which converts a string to a 32-bit signed integer.
+
+The conversion should follow these steps:
+
+1. Ignore any leading whitespace (`' '`).
+2. Determine the sign by checking if the next character is `'+'` or `'-'`. If neither is present, assume the number is positive.
+3. Read the integer by skipping leading zeros until a non-digit character is encountered or the end of the string is reached. If no digits are read, return `0`.
+4. If the integer is outside the 32-bit signed integer range `[-2³¹, 2³¹ - 1]`, return the nearest limit.
+
+### Example 1
+
+**Input:**  
+
+```text
+s = "42"
+```
+
+**Output:**  
+
+```text
+42
+```
+
+**Explanation:**  
+
+There is no leading whitespace or sign. The digits `"42"` are read completely, so the result is `42`.
+
+### Example 2
+
+**Input:**  
+
+```text
+s = "   -042"
+```
+
+**Output:**  
+
+```text
+-42
+```
+
+**Explanation:**  
+
+The leading spaces are ignored, the `'-'` sign makes the number negative, and the leading zero does not affect the result.
+
+### Example 3
+
+**Input:**  
+
+```text
+s = "1337c0d3"
+```
+
+**Output:**  
+
+```text
+1337
+```
+
+**Explanation:**  
+
+The digits are read until the first non-digit character `'c'` is encountered, so the result is `1337`.
