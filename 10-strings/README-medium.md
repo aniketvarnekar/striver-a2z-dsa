@@ -300,3 +300,86 @@ s = "1337c0d3"
 **Explanation:**  
 
 The digits are read until the first non-digit character `'c'` is encountered, so the result is `1337`.
+
+---
+
+## [Problem 12: Substrings with K Distinct](Problem12.java)
+
+**Problem Statement:**  
+Given a string `s` consisting of lowercase English letters and an integer `k`, count the number of substrings that contain **exactly `k` distinct characters**.
+
+A substring is a contiguous sequence of characters within a string.
+
+### Example 1
+
+**Input:**  
+
+```text
+s = "abc"
+k = 2
+```
+
+**Output:**  
+
+```text
+2
+```
+
+**Explanation:**  
+
+The substrings with exactly `2` distinct characters are:
+
+```text
+"ab"
+"bc"
+```
+
+### Example 2
+
+**Input:**  
+
+```text
+s = "aba"
+k = 2
+```
+
+**Output:**  
+
+```text
+3
+```
+
+**Explanation:**  
+
+The substrings with exactly `2` distinct characters are:
+
+```text
+"ab"
+"ba"
+"aba"
+```
+
+### Example 3
+
+**Input:**  
+
+```text
+s = "aa"
+k = 1
+```
+
+**Output:**  
+
+```text
+3
+```
+
+**Explanation:**  
+
+The substrings with exactly `1` distinct character are:
+
+```text
+"a"
+"a"
+"aa"
+```
