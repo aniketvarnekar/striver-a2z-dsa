@@ -383,3 +383,51 @@ The substrings with exactly `1` distinct character are:
 "a"
 "aa"
 ```
+
+---
+
+## [Problem 13: Longest Palindromic Substring](Problem13.java)
+
+**Leetcode**  
+https://leetcode.com/problems/longest-palindromic-substring
+
+**Problem Statement:**  
+Given a string `s`, return the **longest palindromic substring** in `s`.
+
+A **palindrome** is a string that reads the same forward and backward.
+
+### Example 1
+
+**Input:**  
+
+```text
+s = "babad"
+```
+
+**Output:**  
+
+```text
+"bab"
+```
+
+**Explanation:**  
+
+`"bab"` is the longest palindromic substring. `"aba"` is also a valid answer.
+
+### Example 2
+
+**Input:**  
+
+```text
+s = "cbbd"
+```
+
+**Output:**  
+
+```text
+"bb"
+```
+
+**Explanation:**  
+
+The longest palindromic substring is `"bb"`.
