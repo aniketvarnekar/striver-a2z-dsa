@@ -431,3 +431,73 @@ s = "cbbd"
 **Explanation:**  
 
 The longest palindromic substring is `"bb"`.
+
+---
+
+## [Problem 14: Sum of Beauty of All Substrings](Problem14.java)
+
+**Leetcode**  
+https://leetcode.com/problems/sum-of-beauty-of-all-substrings
+
+**Problem Statement:**  
+The **beauty** of a string is defined as the difference between the frequencies of its most frequent and least frequent characters.
+
+For example, the beauty of `"abaacc"` is:
+
+```text
+3 - 1 = 2
+```
+
+Given a string `s`, return the **sum of the beauty values of all its substrings**.
+
+Only characters that appear at least once in a substring are considered when determining the minimum frequency.
+
+### Example 1
+
+**Input:**  
+
+```text
+s = "aabcb"
+```
+
+**Output:**  
+
+```text
+5
+```
+
+**Explanation:**  
+
+The substrings with non-zero beauty are:
+
+```text
+"aab"
+"aabc"
+"aabcb"
+"abcb"
+"bcb"
+```
+
+Each has a beauty of `1`, so the total beauty is:
+
+```text
+1 + 1 + 1 + 1 + 1 = 5
+```
+
+### Example 2
+
+**Input:**  
+
+```text
+s = "aabcbaa"
+```
+
+**Output:**  
+
+```text
+17
+```
+
+**Explanation:**  
+
+The sum of the beauty values of all substrings is `17`.
