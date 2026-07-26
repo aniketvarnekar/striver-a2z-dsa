@@ -1,13 +1,3 @@
 # striver-a2z-dsa
 
 Solutions for [Striver's A2Z DSA Sheet](https://takeuforward.org/dsa/strivers-a2z-sheet-learn-dsa-a-to-z).
-
-## Contents
-
-- **[01-basics](01-basics/)** — Time & space complexity reference
-- **[02-patterns](02-patterns/)** — Star, number & character patterns
-- **[03-java-collections](03-java-collections/)** — Java Collections Framework overview & usage
-- **[04-basic-maths](04-basic-maths/)** — Core maths tools for DSA
-- **[05-basic-recursion](05-basic-recursion/)** — Fundamental recursion problems and concepts  
-- **[06-basic-hashing](06-basic-hashing)** — Frequency counting and hashing techniques
-- **[07-sorting](07-sorting/)** — Sorting algorithms
