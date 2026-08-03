@@ -60,3 +60,64 @@ null
 **Explanation:**  
 
 Since the array is empty, no linked list is created.
+
+---
+
+## [Problem 02: Find Length of a Linked List](Problem02.java)
+
+**Problem Statement:**  
+Given the head of a singly linked list, return the number of nodes present in the linked list.
+
+### Example 1
+
+**Input:**  
+
+```text
+10 → 20 → 30 → 40 → 50
+```
+
+**Output:**  
+
+```text
+5
+```
+
+**Explanation:**  
+
+The linked list contains `5` nodes.
+
+### Example 2
+
+**Input:**  
+
+```text
+1 → 2 → 3
+```
+
+**Output:**  
+
+```text
+3
+```
+
+**Explanation:**  
+
+The linked list contains `3` nodes.
+
+### Example 3
+
+**Input:**  
+
+```text
+null
+```
+
+**Output:**  
+
+```text
+0
+```
+
+**Explanation:**  
+
+The linked list is empty, so its length is `0`.
