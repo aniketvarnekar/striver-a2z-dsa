@@ -121,3 +121,69 @@ null
 **Explanation:**  
 
 The linked list is empty, so its length is `0`.
+
+---
+
+## [Problem 03: Search an Element in a Linked List](Problem03.java)
+
+**Problem Statement:**  
+Given the head of a singly linked list and an integer `target`, determine whether the target value exists in the linked list.
+
+Return `true` if the target is found; otherwise, return `false`.
+
+### Example 1
+
+**Input:**  
+
+```text
+Linked List: 10 → 20 → 30 → 40 → 50
+target = 40
+```
+
+**Output:**  
+
+```text
+true
+```
+
+**Explanation:**  
+
+The value `40` is present in the linked list.
+
+### Example 2
+
+**Input:**  
+
+```text
+Linked List: 10 → 20 → 30 → 40 → 50
+target = 25
+```
+
+**Output:**  
+
+```text
+false
+```
+
+**Explanation:**  
+
+The value `25` is not present in the linked list.
+
+### Example 3
+
+**Input:**  
+
+```text
+Linked List: null
+target = 10
+```
+
+**Output:**  
+
+```text
+false
+```
+
+**Explanation:**  
+
+The linked list is empty, so the target cannot be found.
