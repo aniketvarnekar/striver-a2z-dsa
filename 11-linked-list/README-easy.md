@@ -379,3 +379,69 @@ k = 5
 **Explanation:**  
 
 The linked list contains fewer than `5` nodes, so no deletion is performed.
+
+---
+
+## [Problem 07: Delete a Node by Value in a Linked List](Problem07.java)
+
+**Problem Statement:**  
+Given the head of a singly linked list and an integer `value`, delete the **first occurrence** of the node containing the given value and return the head of the modified linked list.
+
+If the value does not exist in the linked list, return the original linked list unchanged.
+
+### Example 1
+
+**Input:**  
+
+```text
+Linked List: 10 → 20 → 30 → 40 → 50
+value = 30
+```
+
+**Output:**  
+
+```text
+10 → 20 → 40 → 50
+```
+
+**Explanation:**  
+
+The first node containing the value `30` is removed.
+
+### Example 2
+
+**Input:**  
+
+```text
+Linked List: 10 → 20 → 30 → 40 → 50
+value = 10
+```
+
+**Output:**  
+
+```text
+20 → 30 → 40 → 50
+```
+
+**Explanation:**  
+
+The head node contains the target value and is deleted.
+
+### Example 3
+
+**Input:**  
+
+```text
+Linked List: 10 → 20 → 30 → 40 → 50
+value = 60
+```
+
+**Output:**  
+
+```text
+10 → 20 → 30 → 40 → 50
+```
+
+**Explanation:**  
+
+The value `60` is not present in the linked list, so no node is deleted.
