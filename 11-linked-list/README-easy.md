@@ -250,3 +250,66 @@ null
 **Explanation:**  
 
 The linked list is already empty, so there is nothing to delete.
+
+---
+
+## [Problem 05: Delete the Tail of a Linked List](Problem05.java)
+
+**Problem Statement:**  
+Given the head of a singly linked list, delete the last node (tail) of the linked list and return the head of the modified list.
+
+If the linked list is empty or contains only one node, return `null`.
+
+### Example 1
+
+**Input:**  
+
+```text
+10 → 20 → 30 → 40 → 50
+```
+
+**Output:**  
+
+```text
+10 → 20 → 30 → 40
+```
+
+**Explanation:**  
+
+The last node (`50`) is removed from the linked list.
+
+### Example 2
+
+**Input:**  
+
+```text
+5
+```
+
+**Output:**  
+
+```text
+null
+```
+
+**Explanation:**  
+
+The linked list contains only one node. After deleting it, the list becomes empty.
+
+### Example 3
+
+**Input:**  
+
+```text
+null
+```
+
+**Output:**  
+
+```text
+null
+```
+
+**Explanation:**  
+
+The linked list is empty, so there is nothing to delete.

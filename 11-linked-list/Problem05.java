@@ -1,23 +1,33 @@
-public class Problem04 {
+public class Problem05 {
 
     /**
-     * Deletes the head node of a
+     * Deletes the tail node of a
      * singly linked list.
      *
-     * The second node becomes the new
-     * head of the list.
+     * The list is traversed until the
+     * second-last node, whose next pointer
+     * is then set to null.
      *
-     * Time Complexity: O(1)
+     * Time Complexity: O(N)
      * Space Complexity: O(1)
      */
-    private static Node deleteHead(Node head) {
-        // Empty linked list        
-        if (head == null) {
+    private static Node deleteTail(Node head) {
+        // Empty list or single-node list        
+        if (head == null || head.next == null) {
             return null;
         }
 
-        // Return the next node as the new head
-        return head.next;
+        Node current = head;
+
+        // Reach the second-last node
+        while (current.next.next != null) {
+            current = current.next;
+        }
+        
+        // Remove the last node        
+        current.next = null;
+
+        return head;
     }
 
     private static Node arrayToLinkedList(int[] arr) {
@@ -52,7 +62,7 @@ public class Problem04 {
 
         Node head = arrayToLinkedList(arr);
 
-        head = deleteHead(head);
+        head = deleteTail(head);
         
         printLinkedList(head);
     }
