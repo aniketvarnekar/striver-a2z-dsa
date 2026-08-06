@@ -187,3 +187,66 @@ false
 **Explanation:**  
 
 The linked list is empty, so the target cannot be found.
+
+---
+
+## [Problem 04: Delete the Head of a Linked List](Problem04.java)
+
+**Problem Statement:**  
+Given the head of a singly linked list, delete the head node and return the new head of the linked list.
+
+If the linked list is empty, return `null`.
+
+### Example 1
+
+**Input:**  
+
+```text
+10 → 20 → 30 → 40 → 50
+```
+
+**Output:**  
+
+```text
+20 → 30 → 40 → 50
+```
+
+**Explanation:**  
+
+The first node (`10`) is removed, and the second node becomes the new head.
+
+### Example 2
+
+**Input:**  
+
+```text
+5
+```
+
+**Output:**  
+
+```text
+null
+```
+
+**Explanation:**  
+
+The only node in the linked list is deleted, leaving an empty list.
+
+### Example 3
+
+**Input:**  
+
+```text
+null
+```
+
+**Output:**  
+
+```text
+null
+```
+
+**Explanation:**  
+
+The linked list is already empty, so there is nothing to delete.
