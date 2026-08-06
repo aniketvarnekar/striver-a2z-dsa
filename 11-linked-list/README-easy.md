@@ -313,3 +313,69 @@ null
 **Explanation:**  
 
 The linked list is empty, so there is nothing to delete.
+
+---
+
+## [Problem 06: Delete the K-th Node of a Linked List](Problem06.java)
+
+**Problem Statement:**  
+Given the head of a singly linked list and an integer `k` (1-based index), delete the `k`-th node from the linked list and return the head of the modified list.
+
+If `k` is greater than the length of the linked list, the list should remain unchanged.
+
+### Example 1
+
+**Input:**  
+
+```text
+Linked List: 10 → 20 → 30 → 40 → 50
+k = 3
+```
+
+**Output:**  
+
+```text
+10 → 20 → 40 → 50
+```
+
+**Explanation:**  
+
+The 3rd node (`30`) is removed from the linked list.
+
+### Example 2
+
+**Input:**  
+
+```text
+Linked List: 10 → 20 → 30 → 40 → 50
+k = 1
+```
+
+**Output:**  
+
+```text
+20 → 30 → 40 → 50
+```
+
+**Explanation:**  
+
+The head node is deleted, and the second node becomes the new head.
+
+### Example 3
+
+**Input:**  
+
+```text
+Linked List: 10 → 20 → 30
+k = 5
+```
+
+**Output:**  
+
+```text
+10 → 20 → 30
+```
+
+**Explanation:**  
+
+The linked list contains fewer than `5` nodes, so no deletion is performed.
