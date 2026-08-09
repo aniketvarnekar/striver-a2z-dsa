@@ -507,3 +507,65 @@ value = 10
 **Explanation:**  
 
 When the linked list is empty, the new node simply becomes the head.
+
+---
+
+## [Problem 09: Insert a Node at the Tail of a Linked List](Problem09.java)
+
+**Problem Statement:**  
+Given the head of a singly linked list and an integer `value`, insert a new node containing `value` at the end of the linked list.
+
+Return the head of the modified linked list.
+
+### Example 1
+
+**Input:**  
+
+```text
+Linked List: 10 → 20 → 30 → 40 → 50
+value = 60
+```
+
+**Output:**  
+
+```text
+10 → 20 → 30 → 40 → 50 → 60
+```
+
+**Explanation:**  
+
+A new node containing `60` is created and attached after the current last node (`50`).
+
+### Example 2
+
+**Input:**  
+
+```text
+Linked List: 10 → 20
+value = 30
+```
+
+**Output:**  
+
+```text
+10 → 20 → 30
+```
+
+### Example 3
+
+**Input:**  
+
+```text
+Linked List: null
+value = 10
+```
+
+**Output:**  
+
+```text
+10
+```
+
+**Explanation:**  
+
+If the linked list is empty, the new node becomes the head.
