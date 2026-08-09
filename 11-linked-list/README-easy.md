@@ -640,3 +640,74 @@ k = 4
 **Explanation:**  
 
 The new node is inserted after the current last node.
+
+---
+
+## [Problem 11: Insert a Node Before a Given Value in a Linked List](Problem11.java)
+
+**Problem Statement:**  
+Given the head of a singly linked list, an integer `value`, and a `target` value, insert a new node containing `value` **before the first node** containing `target`.
+
+Return the head of the modified linked list.
+
+If the `target` value does not exist in the linked list, return the original list unchanged.
+
+### Example 1
+
+**Input:**  
+
+```text
+Linked List: 10 → 20 → 30 → 40 → 50
+value = 60
+target = 30
+```
+
+**Output:**  
+
+```text
+10 → 20 → 60 → 30 → 40 → 50
+```
+
+**Explanation:**  
+
+The first node containing `30` is found, so `60` is inserted immediately before it.
+
+### Example 2
+
+**Input:**  
+
+```text
+Linked List: 10 → 20 → 30
+value = 5
+target = 10
+```
+
+**Output:**  
+
+```text
+5 → 10 → 20 → 30
+```
+
+**Explanation:**  
+
+Since the target is the head node, the new node becomes the new head.
+
+### Example 3
+
+**Input:**  
+
+```text
+Linked List: 10 → 20 → 30
+value = 40
+target = 50
+```
+
+**Output:**  
+
+```text
+10 → 20 → 30
+```
+
+**Explanation:**  
+
+The target value `50` does not exist, so no node is inserted.
