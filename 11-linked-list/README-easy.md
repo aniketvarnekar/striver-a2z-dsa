@@ -445,3 +445,65 @@ value = 60
 **Explanation:**  
 
 The value `60` is not present in the linked list, so no node is deleted.
+
+---
+
+## [Problem 08: Insert a Node at the Head of a Linked List](Problem08.java)
+
+**Problem Statement:**  
+Given the head of a singly linked list and an integer `value`, insert a new node containing `value` at the beginning of the linked list.
+
+Return the new head of the linked list.
+
+### Example 1
+
+**Input:**  
+
+```text
+Linked List: 10 → 20 → 30 → 40 → 50
+value = 60
+```
+
+**Output:**  
+
+```text
+60 → 10 → 20 → 30 → 40 → 50
+```
+
+**Explanation:**  
+
+A new node containing `60` is created. Its `next` pointer is set to the current head (`10`), and the new node becomes the head.
+
+### Example 2
+
+**Input:**  
+
+```text
+Linked List: 20 → 30
+value = 10
+```
+
+**Output:**  
+
+```text
+10 → 20 → 30
+```
+
+### Example 3
+
+**Input:**  
+
+```text
+Linked List: null
+value = 10
+```
+
+**Output:**  
+
+```text
+10
+```
+
+**Explanation:**  
+
+When the linked list is empty, the new node simply becomes the head.
