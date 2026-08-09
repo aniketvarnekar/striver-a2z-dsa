@@ -569,3 +569,74 @@ value = 10
 **Explanation:**  
 
 If the linked list is empty, the new node becomes the head.
+
+---
+
+## [Problem 10: Insert a Node at the K-th Position of a Linked List](Problem10.java)
+
+**Problem Statement:**  
+Given the head of a singly linked list, an integer `value`, and a 1-based position `k`, insert a new node containing `value` at the `k`-th position of the linked list.
+
+Return the head of the modified linked list.
+
+If `k = 1`, the new node becomes the head.
+
+### Example 1
+
+**Input:**  
+
+```text
+Linked List: 10 → 20 → 30 → 40 → 50
+value = 60
+k = 3
+```
+
+**Output:**  
+
+```text
+10 → 20 → 60 → 30 → 40 → 50
+```
+
+**Explanation:**  
+
+The new node containing `60` is inserted at position `3`, before the node containing `30`.
+
+### Example 2
+
+**Input:**  
+
+```text
+Linked List: 10 → 20 → 30
+value = 5
+k = 1
+```
+
+**Output:**  
+
+```text
+5 → 10 → 20 → 30
+```
+
+**Explanation:**  
+
+Since `k = 1`, the new node is inserted at the beginning of the list.
+
+### Example 3
+
+**Input:**  
+
+```text
+Linked List: 10 → 20 → 30
+value = 40
+k = 4
+```
+
+**Output:**  
+
+```text
+10 → 20 → 30 → 40
+```
+
+**Explanation:**  
+
+The new node is inserted after the current last node.
