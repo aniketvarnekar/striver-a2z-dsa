@@ -711,3 +711,74 @@ target = 50
 **Explanation:**  
 
 The target value `50` does not exist, so no node is inserted.
+
+---
+
+## [Problem 12: Insert a Node After a Given Value in a Linked List](Problem12.java)
+
+**Problem Statement:**  
+Given the head of a singly linked list, an integer `value`, and a `target` value, insert a new node containing `value` **after the first node** containing `target`.
+
+Return the head of the modified linked list.
+
+If the `target` value does not exist in the linked list, return the original list unchanged.
+
+### Example 1
+
+**Input:**  
+
+```text
+Linked List: 10 → 20 → 30 → 40 → 50
+value = 60
+target = 30
+```
+
+**Output:**  
+
+```text
+10 → 20 → 30 → 60 → 40 → 50
+```
+
+**Explanation:**  
+
+The first node containing `30` is found, so `60` is inserted immediately after it.
+
+### Example 2
+
+**Input:**  
+
+```text
+Linked List: 10 → 20 → 30
+value = 5
+target = 10
+```
+
+**Output:**  
+
+```text
+10 → 5 → 20 → 30
+```
+
+**Explanation:**  
+
+The target is the head node, so the new node is inserted immediately after the head.
+
+### Example 3
+
+**Input:**  
+
+```text
+Linked List: 10 → 20 → 30
+value = 40
+target = 50
+```
+
+**Output:**  
+
+```text
+10 → 20 → 30
+```
+
+**Explanation:**  
+
+The target value `50` does not exist, so no node is inserted.
