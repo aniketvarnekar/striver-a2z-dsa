@@ -782,3 +782,32 @@ target = 50
 **Explanation:**  
 
 The target value `50` does not exist, so no node is inserted.
+
+---
+
+## Problem 13: Convert Array to Doubly Linked List
+
+**Problem Statement:**  
+Given an integer array `arr`, convert it into a **doubly linked list**.
+
+In a doubly linked list, each node contains:
+
+- `data` — the value stored in the node.
+- `prev` — a pointer to the previous node.
+- `next` — a pointer to the next node.
+
+The first node's `prev` should be `null`, and the last node's `next` should be `null`.
+
+### Example 1
+
+**Input:**
+
+```text
+arr = [10, 20, 30, 40, 50]
+```
+
+**Output:**
+
+```text
+null ← 10 ⇄ 20 ⇄ 30 ⇄ 40 ⇄ 50 → null
+```
