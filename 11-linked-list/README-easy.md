@@ -811,3 +811,71 @@ arr = [10, 20, 30, 40, 50]
 ```text
 null ← 10 ⇄ 20 ⇄ 30 ⇄ 40 ⇄ 50 → null
 ```
+
+---
+
+## Problem 14: Delete the Head of a Doubly Linked List
+
+**Problem Statement:**  
+Given the head of a doubly linked list, delete the head node and return the new head of the linked list.
+
+After deleting the head:
+
+- The second node becomes the new head.
+- The new head's `prev` pointer must be set to `null`.
+- The deleted head's `next` pointer should also be set to `null`.
+- If the list is empty or contains only one node, return `null`.
+
+### Example 1
+
+**Input:**
+
+```text
+null ← 10 ⇄ 20 ⇄ 30 ⇄ 40 ⇄ 50 → null
+```
+
+**Output:**
+
+```text
+null ← 20 ⇄ 30 ⇄ 40 ⇄ 50 → null
+```
+
+**Explanation:**
+
+The node containing `10` is deleted. The node containing `20` becomes the new head, its `prev` pointer is set to `null`, and the deleted node is disconnected from the list.
+
+### Example 2
+
+**Input:**
+
+```text
+null ← 10 → null
+```
+
+**Output:**
+
+```text
+null
+```
+
+**Explanation:**
+
+The list contains only one node, so deleting the head leaves the list empty.
+
+### Example 3
+
+**Input:**
+
+```text
+null
+```
+
+**Output:**
+
+```text
+null
+```
+
+**Explanation:**
+
+The list is already empty, so there is nothing to delete.
