@@ -879,3 +879,70 @@ null
 **Explanation:**
 
 The list is already empty, so there is nothing to delete.
+
+---
+
+## Problem 15: Delete the Tail of a Doubly Linked List
+
+**Problem Statement:**  
+Given the head of a doubly linked list, delete the tail node and return the head of the modified linked list.
+
+After deleting the tail:
+
+- The new tail's `next` pointer must be set to `null`.
+- The deleted tail's `prev` pointer should also be set to `null`.
+- If the list is empty or contains only one node, return `null`.
+
+### Example 1
+
+**Input:**
+
+```text
+null ← 10 ⇄ 20 ⇄ 30 ⇄ 40 ⇄ 50 → null
+```
+
+**Output:**
+
+```text
+null ← 10 ⇄ 20 ⇄ 30 ⇄ 40 → null
+```
+
+**Explanation:**
+
+The node containing `50` is deleted. The node containing `40` becomes the new tail, and its `next` pointer is set to `null`.
+
+### Example 2
+
+**Input:**
+
+```text
+null ← 10 → null
+```
+
+**Output:**
+
+```text
+null
+```
+
+**Explanation:**
+
+The list contains only one node, so deleting the tail leaves the list empty.
+
+### Example 3
+
+**Input:**
+
+```text
+null
+```
+
+**Output:**
+
+```text
+null
+```
+
+**Explanation:**
+
+The list is already empty, so there is nothing to delete.
