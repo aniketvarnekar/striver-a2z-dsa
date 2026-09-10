@@ -785,7 +785,7 @@ The target value `50` does not exist, so no node is inserted.
 
 ---
 
-## Problem 13: Convert Array to Doubly Linked List
+## [Problem 13: Convert Array to Doubly Linked List](Problem13.java)
 
 **Problem Statement:**  
 Given an integer array `arr`, convert it into a **doubly linked list**.
@@ -814,7 +814,7 @@ null ← 10 ⇄ 20 ⇄ 30 ⇄ 40 ⇄ 50 → null
 
 ---
 
-## Problem 14: Delete the Head of a Doubly Linked List
+## [Problem 14: Delete the Head of a Doubly Linked List](Problem14.java)
 
 **Problem Statement:**  
 Given the head of a doubly linked list, delete the head node and return the new head of the linked list.
@@ -882,7 +882,7 @@ The list is already empty, so there is nothing to delete.
 
 ---
 
-## Problem 15: Delete the Tail of a Doubly Linked List
+## [Problem 15: Delete the Tail of a Doubly Linked List](Problem15.java)
 
 **Problem Statement:**  
 Given the head of a doubly linked list, delete the tail node and return the head of the modified linked list.
@@ -946,3 +946,118 @@ null
 **Explanation:**
 
 The list is already empty, so there is nothing to delete.
+
+---
+
+## [Problem 16: Delete Kth Node from Doubly Linked List](Problem16.java)
+
+**Problem Statement:**
+
+Given the head of a **doubly linked list** and an integer `k`, delete the **kth node** from the linked list.
+
+The position `k` is **1-based**, meaning the first node is at position `1`.
+
+Return the head of the modified doubly linked list.
+
+If `k` is greater than the length of the linked list, return the original list unchanged.
+
+### Example 1
+
+**Input:**
+
+```text
+arr = [10, 20, 30, 40, 50]
+k = 3
+```
+
+**Output:**
+
+```text
+10 ↔ 20 ↔ 40 ↔ 50
+```
+
+**Explanation:**
+
+The 3rd node contains `30`, so it is removed from the doubly linked list.
+
+The `next` pointer of `20` is updated to point to `40`, and the `prev` pointer of `40` is updated to point to `20`.
+
+### Example 2
+
+**Input:**
+
+```text
+arr = [10, 20, 30, 40, 50]
+k = 1
+```
+
+**Output:**
+
+```text
+20 ↔ 30 ↔ 40 ↔ 50
+```
+
+**Explanation:**
+
+The 1st node is the head node, so it is removed.
+
+The `prev` pointer of the new head node (`20`) is set to `null`.
+
+### Example 3
+
+**Input:**
+
+```text
+arr = [10, 20, 30, 40, 50]
+k = 5
+```
+
+**Output:**
+
+```text
+10 ↔ 20 ↔ 30 ↔ 40
+```
+
+**Explanation:**
+
+The 5th node is the last node, so it is removed.
+
+The `next` pointer of the new last node (`40`) is set to `null`.
+
+### Example 4
+
+**Input:**
+
+```text
+arr = [10]
+k = 1
+```
+
+**Output:**
+
+```text
+null
+```
+
+**Explanation:**
+
+The linked list contains only one node, and that node is the kth node. Therefore, deleting it results in an empty list.
+
+### Example 5
+
+**Input:**
+
+```text
+arr = [10, 20, 30]
+k = 5
+```
+
+**Output:**
+
+```text
+10 ↔ 20 ↔ 30
+```
+
+**Explanation:**
+
+The value of `k` is greater than the length of the linked list, so no node is deleted and the original list is returned.
