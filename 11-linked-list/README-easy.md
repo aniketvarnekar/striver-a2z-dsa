@@ -1239,3 +1239,74 @@ value = 5
 **Explanation:**
 
 Since the linked list is empty, the new node becomes the head of the list. Its `prev` and `next` pointers remain `null`.
+
+---
+
+## [Problem 19: Insert Node at Tail of Doubly Linked List](Problem19.java)
+
+**Problem Statement:**
+
+Given the head of a **doubly linked list** and an integer `value`, insert a new node containing the given value at the **end (tail)** of the linked list.
+
+Return the head of the modified doubly linked list.
+
+If the linked list is empty, the new node becomes the head of the list.
+
+### Example 1
+
+**Input:**
+
+```text
+arr = [10, 20, 30, 40, 50]
+value = 60
+```
+
+**Output:**
+
+```text
+10 ↔ 20 ↔ 30 ↔ 40 ↔ 50 ↔ 60
+```
+
+**Explanation:**
+
+A new node containing `60` is created and inserted after the existing last node `50`.
+
+The `next` pointer of `50` points to the new node, and the `prev` pointer of the new node points back to `50`.
+
+### Example 2
+
+**Input:**
+
+```text
+arr = [10]
+value = 20
+```
+
+**Output:**
+
+```text
+10 ↔ 20
+```
+
+**Explanation:**
+
+The linked list contains only one node. The new node containing `20` is inserted after the existing node `10`.
+
+### Example 3
+
+**Input:**
+
+```text
+arr = []
+value = 10
+```
+
+**Output:**
+
+```text
+10
+```
+
+**Explanation:**
+
+Since the linked list is empty, the new node becomes the head of the list.
