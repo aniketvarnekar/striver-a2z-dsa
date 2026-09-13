@@ -1061,3 +1061,110 @@ k = 5
 **Explanation:**
 
 The value of `k` is greater than the length of the linked list, so no node is deleted and the original list is returned.
+
+---
+
+## [Problem 17: Delete Node by Value from Doubly Linked List](Problem17.java)
+
+**Problem Statement:**
+
+Given the head of a **doubly linked list** and an integer `value`, delete the **first node** whose data matches the given value.
+
+Return the head of the modified doubly linked list.
+
+If no node contains the given value, return the original linked list unchanged.
+
+### Example 1
+
+**Input:**
+
+```text
+arr = [10, 20, 30, 40, 50]
+value = 30
+```
+
+**Output:**
+
+```text
+10 ↔ 20 ↔ 40 ↔ 50
+```
+
+**Explanation:**
+
+The first node containing `30` is the third node. It is removed from the linked list, and the `prev` and `next` pointers of the neighboring nodes are updated.
+
+### Example 2
+
+**Input:**
+
+```text
+arr = [10, 20, 30, 40, 50]
+value = 10
+```
+
+**Output:**
+
+```text
+20 ↔ 30 ↔ 40 ↔ 50
+```
+
+**Explanation:**
+
+The node containing `10` is the head node. After deleting it, `20` becomes the new head and its `prev` pointer is set to `null`.
+
+### Example 3
+
+**Input:**
+
+```text
+arr = [10, 20, 30, 40, 50]
+value = 50
+```
+
+**Output:**
+
+```text
+10 ↔ 20 ↔ 30 ↔ 40
+```
+
+**Explanation:**
+
+The node containing `50` is the last node. After deleting it, `40` becomes the last node and its `next` pointer is set to `null`.
+
+### Example 4
+
+**Input:**
+
+```text
+arr = [10, 20, 30, 40, 50]
+value = 100
+```
+
+**Output:**
+
+```text
+10 ↔ 20 ↔ 30 ↔ 40 ↔ 50
+```
+
+**Explanation:**
+
+No node contains the value `100`, so the original linked list is returned unchanged.
+
+### Example 5
+
+**Input:**
+
+```text
+arr = [10, 20, 20, 30]
+value = 20
+```
+
+**Output:**
+
+```text
+10 ↔ 20 ↔ 30
+```
+
+**Explanation:**
+
+There are two nodes containing `20`. Only the **first occurrence** is deleted.
