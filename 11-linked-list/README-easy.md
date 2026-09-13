@@ -1168,3 +1168,74 @@ value = 20
 **Explanation:**
 
 There are two nodes containing `20`. Only the **first occurrence** is deleted.
+
+---
+
+## [Problem 18: Insert Node at Head of Doubly Linked List](Problem18.java)
+
+**Problem Statement:**
+
+Given the head of a **doubly linked list** and an integer `value`, insert a new node containing the given value at the **beginning (head)** of the linked list.
+
+Return the head of the modified doubly linked list.
+
+If the linked list is empty, the new node becomes the head of the list.
+
+### Example 1
+
+**Input:**
+
+```text
+arr = [10, 20, 30, 40, 50]
+value = 5
+```
+
+**Output:**
+
+```text
+5 ↔ 10 ↔ 20 ↔ 30 ↔ 40 ↔ 50
+```
+
+**Explanation:**
+
+A new node containing `5` is created and inserted before the existing head node `10`.
+
+The `next` pointer of the new node points to `10`, and the `prev` pointer of `10` points back to the new node.
+
+### Example 2
+
+**Input:**
+
+```text
+arr = [10]
+value = 5
+```
+
+**Output:**
+
+```text
+5 ↔ 10
+```
+
+**Explanation:**
+
+The new node containing `5` becomes the new head, while the existing node `10` becomes the second node.
+
+### Example 3
+
+**Input:**
+
+```text
+arr = []
+value = 5
+```
+
+**Output:**
+
+```text
+5
+```
+
+**Explanation:**
+
+Since the linked list is empty, the new node becomes the head of the list. Its `prev` and `next` pointers remain `null`.
