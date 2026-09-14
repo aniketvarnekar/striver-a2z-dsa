@@ -1520,3 +1520,117 @@ target = 20
 **Explanation:**
 
 There are multiple nodes containing `20`. The new node is inserted before the **first occurrence** of the target value.
+
+---
+
+## [Problem 22: Insert Node After a Given Value in Doubly Linked List](Problem22.java)
+
+**Problem Statement:**
+
+Given the head of a **doubly linked list**, an integer `value`, and an integer `target`, insert a new node containing `value` **after the first node** whose data matches `target`.
+
+Return the head of the modified doubly linked list.
+
+If the target value is not present in the linked list, return the original list unchanged.
+
+### Example 1
+
+**Input:**
+
+```text
+arr = [10, 20, 30, 40, 50]
+value = 35
+target = 30
+```
+
+**Output:**
+
+```text
+10 ↔ 20 ↔ 30 ↔ 35 ↔ 40 ↔ 50
+```
+
+**Explanation:**
+
+The first node containing `30` is found. A new node containing `35` is inserted immediately after it.
+
+The `prev` and `next` pointers of the new node and its neighboring nodes are updated accordingly.
+
+### Example 2
+
+**Input:**
+
+```text
+arr = [10, 20, 30, 40, 50]
+value = 15
+target = 10
+```
+
+**Output:**
+
+```text
+10 ↔ 15 ↔ 20 ↔ 30 ↔ 40 ↔ 50
+```
+
+**Explanation:**
+
+The target value `10` is stored in the head node. The new node containing `15` is inserted immediately after the head.
+
+### Example 3
+
+**Input:**
+
+```text
+arr = [10, 20, 30, 40, 50]
+value = 60
+target = 50
+```
+
+**Output:**
+
+```text
+10 ↔ 20 ↔ 30 ↔ 40 ↔ 50 ↔ 60
+```
+
+**Explanation:**
+
+The target value `50` is stored in the last node. The new node containing `60` is inserted after the last node and becomes the new tail.
+
+### Example 4
+
+**Input:**
+
+```text
+arr = [10, 20, 30, 40, 50]
+value = 35
+target = 100
+```
+
+**Output:**
+
+```text
+10 ↔ 20 ↔ 30 ↔ 40 ↔ 50
+```
+
+**Explanation:**
+
+The target value `100` does not exist in the linked list, so no node is inserted and the original list is returned unchanged.
+
+### Example 5
+
+**Input:**
+
+```text
+arr = [10, 20, 20, 30]
+value = 25
+target = 20
+```
+
+**Output:**
+
+```text
+10 ↔ 20 ↔ 25 ↔ 20 ↔ 30
+```
+
+**Explanation:**
+
+There are multiple nodes containing `20`. The new node is inserted after the **first occurrence** of the target value.
