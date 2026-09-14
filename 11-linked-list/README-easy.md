@@ -1310,3 +1310,99 @@ value = 10
 **Explanation:**
 
 Since the linked list is empty, the new node becomes the head of the list.
+
+---
+
+## [Problem 20: Insert Node at Kth Position in Doubly Linked List](Problem20.java)
+
+**Problem Statement:**
+
+Given the head of a **doubly linked list**, an integer `value`, and an integer `k`, insert a new node containing the given value at the **kth position** in the linked list.
+
+The position `k` is **1-based**, meaning the first position is `1`.
+
+Return the head of the modified doubly linked list.
+
+If `k` is greater than the next valid insertion position, return the original linked list unchanged.
+
+### Example 1
+
+**Input:**
+
+```text
+arr = [10, 20, 30, 40, 50]
+value = 25
+k = 3
+```
+
+**Output:**
+
+```text
+10 ↔ 20 ↔ 25 ↔ 30 ↔ 40 ↔ 50
+```
+
+**Explanation:**
+
+The new node containing `25` is inserted at position `3`, before the existing node `30`.
+
+The `prev` and `next` pointers of the surrounding nodes are updated to maintain the doubly linked list.
+
+### Example 2
+
+**Input:**
+
+```text
+arr = [10, 20, 30, 40, 50]
+value = 5
+k = 1
+```
+
+**Output:**
+
+```text
+5 ↔ 10 ↔ 20 ↔ 30 ↔ 40 ↔ 50
+```
+
+**Explanation:**
+
+Since `k` is `1`, the new node is inserted at the beginning of the list and becomes the new head.
+
+### Example 3
+
+**Input:**
+
+```text
+arr = [10, 20, 30, 40, 50]
+value = 60
+k = 6
+```
+
+**Output:**
+
+```text
+10 ↔ 20 ↔ 30 ↔ 40 ↔ 50 ↔ 60
+```
+
+**Explanation:**
+
+The new node is inserted at position `6`, which is immediately after the existing last node.
+
+### Example 4
+
+**Input:**
+
+```text
+arr = [10, 20, 30]
+value = 40
+k = 5
+```
+
+**Output:**
+
+```text
+10 ↔ 20 ↔ 30
+```
+
+**Explanation:**
+
+Position `5` is beyond the valid insertion range, so the linked list remains unchanged.
