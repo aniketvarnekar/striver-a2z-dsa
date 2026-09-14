@@ -1406,3 +1406,117 @@ k = 5
 **Explanation:**
 
 Position `5` is beyond the valid insertion range, so the linked list remains unchanged.
+
+---
+
+## [Problem 21: Insert Node Before a Given Value in Doubly Linked List](Problem21.java)
+
+**Problem Statement:**
+
+Given the head of a **doubly linked list**, an integer `value`, and an integer `target`, insert a new node containing `value` **before the first node** whose data matches `target`.
+
+Return the head of the modified doubly linked list.
+
+If the target value is not present in the linked list, return the original list unchanged.
+
+### Example 1
+
+**Input:**
+
+```text
+arr = [10, 20, 30, 40, 50]
+value = 25
+target = 30
+```
+
+**Output:**
+
+```text
+10 ↔ 20 ↔ 25 ↔ 30 ↔ 40 ↔ 50
+```
+
+**Explanation:**
+
+The first node containing `30` is found at the third position. A new node containing `25` is inserted immediately before it.
+
+The `prev` and `next` pointers of the surrounding nodes are updated accordingly.
+
+### Example 2
+
+**Input:**
+
+```text
+arr = [10, 20, 30, 40, 50]
+value = 5
+target = 10
+```
+
+**Output:**
+
+```text
+5 ↔ 10 ↔ 20 ↔ 30 ↔ 40 ↔ 50
+```
+
+**Explanation:**
+
+The target value `10` is stored in the head node. The new node containing `5` is inserted before the head and becomes the new head.
+
+### Example 3
+
+**Input:**
+
+```text
+arr = [10, 20, 30, 40, 50]
+value = 35
+target = 50
+```
+
+**Output:**
+
+```text
+10 ↔ 20 ↔ 30 ↔ 40 ↔ 35 ↔ 50
+```
+
+**Explanation:**
+
+The target value `50` is stored in the last node. The new node containing `35` is inserted immediately before the last node.
+
+### Example 4
+
+**Input:**
+
+```text
+arr = [10, 20, 30, 40, 50]
+value = 25
+target = 100
+```
+
+**Output:**
+
+```text
+10 ↔ 20 ↔ 30 ↔ 40 ↔ 50
+```
+
+**Explanation:**
+
+The target value `100` does not exist in the linked list, so no node is inserted and the original list is returned unchanged.
+
+### Example 5
+
+**Input:**
+
+```text
+arr = [10, 20, 20, 30]
+value = 15
+target = 20
+```
+
+**Output:**
+
+```text
+10 ↔ 15 ↔ 20 ↔ 20 ↔ 30
+```
+
+**Explanation:**
+
+There are multiple nodes containing `20`. The new node is inserted before the **first occurrence** of the target value.
