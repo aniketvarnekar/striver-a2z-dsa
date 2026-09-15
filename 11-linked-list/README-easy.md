@@ -1762,3 +1762,111 @@ null
 **Explanation:**
 
 An empty doubly linked list remains empty after reversal.
+
+---
+
+## [Problem 25: Delete Node in a Linked List](Problem25.java)
+
+**Leetcode**  
+https://leetcode.com/problems/delete-node-in-a-linked-list
+
+**Problem Statement:**
+
+Given a node in a **singly linked list**, delete that node from the linked list.
+
+You are **not given access to the head** of the linked list. Instead, you are given only the node that needs to be deleted.
+
+The given node is guaranteed to **not be the last node** in the linked list.
+
+To delete the node, copy the value of its next node into the current node, then skip over the next node.
+
+### Example 1
+
+**Input:**
+
+```text
+arr = [10, 20, 30, 40, 50]
+node = 30
+```
+
+**Output:**
+
+```text
+10 → 20 → 40 → 50
+```
+
+**Explanation:**
+
+The node containing `30` is given, but the head is not available.
+
+The value `40` from the next node is copied into the current node, and the next pointer is updated to skip the original `40` node.
+
+The resulting list is:
+
+```text
+10 → 20 → 40 → 50
+```
+
+### Example 2
+
+**Input:**
+
+```text
+arr = [4, 5, 1, 9]
+node = 5
+```
+
+**Output:**
+
+```text
+4 → 1 → 9
+```
+
+**Explanation:**
+
+The node containing `5` is replaced with the value `1`, and the original node containing `1` is skipped.
+
+### Example 3
+
+**Input:**
+
+```text
+arr = [4, 5, 1, 9]
+node = 1
+```
+
+**Output:**
+
+```text
+4 → 5 → 9
+```
+
+**Explanation:**
+
+The value `9` from the next node is copied into the node containing `1`, and the next pointer is updated to skip the original `9` node.
+
+### Example 4
+
+**Input:**
+
+```text
+arr = [10, 20]
+node = 10
+```
+
+**Output:**
+
+```text
+20
+```
+
+**Explanation:**
+
+The value `20` is copied into the given node, and the original second node is skipped.
+
+### Constraints
+
+* The linked list contains at least two nodes.
+* The values of the linked list are unique.
+* The given node is an actual node in the linked list.
+* The given node is not the last node.
