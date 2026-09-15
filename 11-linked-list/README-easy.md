@@ -1698,3 +1698,67 @@ null
 **Explanation:**
 
 An empty linked list remains empty after reversal.
+
+---
+
+## [Problem 24: Reverse a Doubly Linked List](Problem24.java)
+
+**Problem Statement:**
+
+Given the head of a **doubly linked list**, reverse the linked list and return the new head.
+
+The reversal should be performed by swapping the `prev` and `next` pointers of each existing node without creating any additional nodes.
+
+### Example 1
+
+**Input:**
+
+```text
+arr = [10, 20, 30, 40, 50]
+```
+
+**Output:**
+
+```text
+50 ↔ 40 ↔ 30 ↔ 20 ↔ 10
+```
+
+**Explanation:**
+
+For every node, its `prev` and `next` pointers are swapped. The original tail becomes the new head, and the original head becomes the new tail.
+
+### Example 2
+
+**Input:**
+
+```text
+arr = [10]
+```
+
+**Output:**
+
+```text
+10
+```
+
+**Explanation:**
+
+A doubly linked list containing only one node is already reversed, so the same node remains the head.
+
+### Example 3
+
+**Input:**
+
+```text
+arr = []
+```
+
+**Output:**
+
+```text
+null
+```
+
+**Explanation:**
+
+An empty doubly linked list remains empty after reversal.
