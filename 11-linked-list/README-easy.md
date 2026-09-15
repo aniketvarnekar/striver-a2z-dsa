@@ -1634,3 +1634,67 @@ target = 20
 **Explanation:**
 
 There are multiple nodes containing `20`. The new node is inserted after the **first occurrence** of the target value.
+
+---
+
+## [Problem 23: Reverse a Singly Linked List](Problem23.java)
+
+**Problem Statement:**
+
+Given the head of a **singly linked list**, reverse the linked list and return the new head.
+
+The reversal should be performed by changing the `next` pointers of the existing nodes without creating any additional nodes.
+
+### Example 1
+
+**Input:**
+
+```text
+arr = [10, 20, 30, 40, 50]
+```
+
+**Output:**
+
+```text
+50 → 40 → 30 → 20 → 10
+```
+
+**Explanation:**
+
+The `next` pointers of all nodes are reversed so that the last node becomes the new head and the original head becomes the last node.
+
+### Example 2
+
+**Input:**
+
+```text
+arr = [10]
+```
+
+**Output:**
+
+```text
+10
+```
+
+**Explanation:**
+
+A linked list containing only one node is already reversed, so the same node remains the head.
+
+### Example 3
+
+**Input:**
+
+```text
+arr = []
+```
+
+**Output:**
+
+```text
+null
+```
+
+**Explanation:**
+
+An empty linked list remains empty after reversal.
