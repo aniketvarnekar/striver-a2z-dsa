@@ -1,6 +1,42 @@
 public class Problem23 {
 
     /**
+     * Reverses a singly linked list recursively.
+     *
+     * The recursion reaches the last node, which becomes the
+     * new head. During the return phase, each node is attached
+     * after its next node to reverse the links.
+     *
+     * Time Complexity: O(N)
+     * Space Complexity: O(N)
+     * 
+     * Space is O(N) because of the recursive call stack.
+     */
+    private static Node reverseLinkedListRecursive(Node head) {
+        // Base case:
+        // An empty list or a single-node list is already reversed        
+        if (head == null || head.next == null) {
+            return head;
+        }
+
+        // Store the next node before making the recursive call
+        Node next = head.next;
+
+        // Recursively reverse the remaining list
+        Node newHead = reverseLinkedListRecursive(next);
+
+        // Make the next node point back to the current node
+        next.next = head;
+
+        // The current node becomes the last node of the
+        // reversed portion, so its next pointer must be null        
+        head.next = null;
+
+        // Return the head of the completely reversed list
+        return newHead;
+    }
+
+    /**
      * Reverses a singly linked list iteratively.
      *
      * Three pointers are used:
@@ -71,6 +107,10 @@ public class Problem23 {
         Node head = arrayToLinkedList(arr);
 
         head = reverseLinkedList(head);
+
+        printLinkedList(head);
+
+        head = reverseLinkedListRecursive(head);
 
         printLinkedList(head);
     }
