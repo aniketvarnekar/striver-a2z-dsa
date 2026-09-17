@@ -87,3 +87,112 @@ There are two nodes, so `10` and `20` are the two middle candidates. The second 
 
 ---
 
+## [Problem 27: Detect Cycle in a Linked List](Problem27.java)
+
+**Leetcode**  
+https://leetcode.com/problems/linked-list-cycle
+
+**Problem Statement:**
+
+Given the head of a **singly linked list**, determine whether the linked list contains a **cycle**.
+
+A cycle exists if, by continuously following the `next` pointer, a node is reached again.
+
+Use the **Floyd's Cycle Detection Algorithm**, also known as the **slow and fast pointer technique**, to detect the cycle.
+
+Return `true` if the linked list contains a cycle. Otherwise, return `false`.
+
+### Example 1
+
+**Input:**
+
+```text
+head = [3, 2, 0, -4]
+pos = 1
+```
+
+**Output:**
+
+```text
+true
+```
+
+**Explanation:**
+
+The last node points back to the node at index `1`, creating a cycle:
+
+```text
+3 → 2 → 0 → -4
+    ↑         ↓
+    └─────────┘
+```
+
+Since a node can be reached again by following the `next` pointers, the linked list contains a cycle.
+
+### Example 2
+
+**Input:**
+
+```text
+head = [1, 2]
+pos = 0
+```
+
+**Output:**
+
+```text
+true
+```
+
+**Explanation:**
+
+The last node points back to the first node, creating a cycle:
+
+```text
+1 → 2
+↑   ↓
+└───┘
+```
+
+Therefore, the linked list contains a cycle.
+
+### Example 3
+
+**Input:**
+
+```text
+head = [1]
+pos = -1
+```
+
+**Output:**
+
+```text
+false
+```
+
+**Explanation:**
+
+The linked list contains only one node, and its `next` pointer is `null`. Therefore, there is no cycle.
+
+### Example 4
+
+**Input:**
+
+```text
+head = [10, 20, 30, 40, 50]
+pos = -1
+```
+
+**Output:**
+
+```text
+false
+```
+
+**Explanation:**
+
+The linked list terminates at the last node because its `next` pointer is `null`. No node can be reached again, so there is no cycle.
+
+---
+
