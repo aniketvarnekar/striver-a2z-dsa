@@ -1639,6 +1639,9 @@ There are multiple nodes containing `20`. The new node is inserted after the **f
 
 ## [Problem 23: Reverse a Singly Linked List](Problem23.java)
 
+**Leetcode**  
+https://leetcode.com/problems/reverse-linked-list
+
 **Problem Statement:**
 
 Given the head of a **singly linked list**, reverse the linked list and return the new head.
