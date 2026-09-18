@@ -196,3 +196,159 @@ The linked list terminates at the last node because its `next` pointer is `null`
 
 ---
 
+## [Problem 28: Find the Node Where Cycle Begins in a Linked List](Problem28.java)
+
+**Problem Statement:**
+
+Given the head of a **singly linked list**, determine whether the linked list contains a cycle.
+
+If a cycle exists, return the **node where the cycle begins**.
+
+If there is no cycle, return `null`.
+
+The linked list must **not be modified**.
+
+The integer `pos` represents the **0-based index** of the node that the last node points to. If `pos = -1`, the linked list does not contain a cycle.
+
+Use **Floyd's Cycle Detection Algorithm** (slow and fast pointer technique) to detect the cycle and find its starting node.
+
+### Example 1
+
+**Input:**
+
+```text
+head = [3, 2, 0, -4]
+pos = 1
+```
+
+**Linked List:**
+
+```text
+3 → 2 → 0 → -4
+    ↑         ↓
+    └─────────┘
+```
+
+**Output:**
+
+```text
+Node with value 2
+```
+
+**Explanation:**
+
+The node at index `1` contains `2`.
+
+The last node `-4` points back to the node containing `2`, creating the following cycle:
+
+```text
+2 → 0 → -4
+↑         ↓
+└─────────┘
+```
+
+Therefore, the node containing `2` is the beginning of the cycle.
+
+### Example 2
+
+**Input:**
+
+```text
+head = [1, 2]
+pos = 0
+```
+
+**Linked List:**
+
+```text
+1 → 2
+↑   ↓
+└───┘
+```
+
+**Output:**
+
+```text
+Node with value 1
+```
+
+**Explanation:**
+
+The node at index `0` contains `1`.
+
+The last node `2` points back to the head node `1`, creating a cycle:
+
+```text
+1 → 2
+↑   ↓
+└───┘
+```
+
+Therefore, the node containing `1` is the beginning of the cycle.
+
+### Example 3
+
+**Input:**
+
+```text
+head = [1]
+pos = -1
+```
+
+**Linked List:**
+
+```text
+1 → null
+```
+
+**Output:**
+
+```text
+null
+```
+
+**Explanation:**
+
+`pos = -1` indicates that the last node does not point to any previous node.
+
+Therefore, the linked list does not contain a cycle.
+
+### Example 4
+
+**Input:**
+
+```text
+head = [10, 20, 30, 40, 50]
+pos = 2
+```
+
+**Linked List:**
+
+```text
+10 → 20 → 30 → 40 → 50
+          ↑          ↓
+          └──────────┘
+```
+
+**Output:**
+
+```text
+Node with value 30
+```
+
+**Explanation:**
+
+The node at index `2` contains `30`.
+
+The last node `50` points back to `30`, creating the cycle:
+
+```text
+30 → 40 → 50
+↑         ↓
+└─────────┘
+```
+
+Therefore, the node containing `30` is the beginning of the cycle.
+
+---
+
