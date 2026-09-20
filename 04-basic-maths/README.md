@@ -1,6 +1,6 @@
 # 04 — Basic Maths
 
-## [Problem 1: Count digits in a number](Problem01.java)
+## [Problem 01: Count digits in a number](Problem01.java)
 
 **Problem Statement:**  
 Given an integer `N`, return the number of digits in `N`.
@@ -17,7 +17,7 @@ Given an integer `N`, return the number of digits in `N`.
 
 ---
 
-## [Problem 2: Reverse digits of a number](Problem02.java)
+## [Problem 02: Reverse digits of a number](Problem02.java)
 
 **Problem Statement:**  
 Given an integer `N`, return the reverse of the given number.
@@ -38,7 +38,7 @@ For example, the reverse of `10400` is `401`, not `00401`.
 
 ---
 
-## [Problem 3: Check if a number is Palindrome or Not](Problem03.java)
+## [Problem 03: Check if a number is Palindrome or Not](Problem03.java)
 
 **Problem Statement:**  
 Given an integer N, return true if it is a palindrome else return false.
@@ -58,7 +58,7 @@ A palindrome is a number that reads the same backward as forward. For example, `
 
 ---
 
-## [Problem 4: Find GCD of two numbers](Problem04.java)
+## [Problem 04: Find GCD of two numbers](Problem04.java)
 
 **Problem Statement:**  
 Given two integers `N1` and `N2`, find their Greatest Common Divisor (GCD).
@@ -85,7 +85,7 @@ Greatest Common Divisor: `5`
 
 ---
 
-## [Problem 5: Check if a number is Armstrong Number](Problem05.java)
+## [Problem 05: Check if a number is Armstrong Number](Problem05.java)
 
 **Problem Statement:**  
 Given an integer `N`, return `true` if it is an Armstrong number; otherwise, return `false`.
@@ -106,7 +106,7 @@ An Armstrong number is a number that is equal to the sum of its own digits each 
 
 ---
 
-## [Problem 6: Print all Divisors of a given Number](Problem06.java)
+## [Problem 06: Print all Divisors of a given Number](Problem06.java)
 
 **Problem Statement:**  
 Given an integer `N`, return all divisors of `N`.
@@ -127,7 +127,7 @@ The divisors of `12` are `1, 2, 3, 4, 6, 12`.
 
 ---
 
-## [Problem 7: Check if a number is Prime](Problem07.java)
+## [Problem 07: Check if a number is Prime](Problem07.java)
 
 **Problem Statement:**  
 Given an integer `N`, determine whether it is a prime number.
@@ -147,3 +147,110 @@ In other words, a prime number has exactly two distinct positive divisors.
 **Explanation:**  
 10 is not a prime number because it has four divisors: `1, 2, 5, 10`.  
 Since it has more than two divisors, it is a composite number.
+
+---
+
+## [Problem 08: Count Odd Digits in a Number](Problem08.java)
+
+**Problem Statement:**
+
+Given an integer `n`, return the **number of odd digits** present in the number.
+
+The number will have no leading zeroes, except when the number is `0` itself.
+
+### Example 1
+
+**Input:**
+
+```text
+n = 12345
+```
+
+**Output:**
+
+```text
+3
+```
+
+**Explanation:**
+
+The odd digits are `1`, `3`, and `5`.
+
+Therefore, the total number of odd digits is `3`.
+
+### Example 2
+
+**Input:**
+
+```text
+n = 2468
+```
+
+**Output:**
+
+```text
+0
+```
+
+**Explanation:**
+
+All digits in `2468` are even, so there are no odd digits.
+
+### Example 3
+
+**Input:**
+
+```text
+n = 13579
+```
+
+**Output:**
+
+```text
+5
+```
+
+**Explanation:**
+
+All five digits are odd, so the count is `5`.
+
+### Example 4
+
+**Input:**
+
+```text
+n = 0
+```
+
+**Output:**
+
+```text
+0
+```
+
+**Explanation:**
+
+The number `0` contains one even digit and therefore has no odd digits.
+
+### Example 5
+
+**Input:**
+
+```text
+n = 1203045
+```
+
+**Output:**
+
+```text
+3
+```
+
+**Explanation:**
+
+The odd digits are `1`, `3`, and `5`.
+
+Therefore, the total number of odd digits is `3`.
+
+---
+
