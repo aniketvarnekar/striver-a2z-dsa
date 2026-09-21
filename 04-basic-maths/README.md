@@ -254,3 +254,98 @@ Therefore, the total number of odd digits is `3`.
 
 ---
 
+## [Problem 09: Find the Largest Digit in a Number](Problem09.java)
+
+**Problem Statement:**
+
+Given an integer `n`, return the **largest digit** present in the number.
+
+### Example 1
+
+**Input:**
+
+```text
+n = 25
+```
+
+**Output:**
+
+```text
+5
+```
+
+**Explanation:**
+
+The digits in `25` are `2` and `5`. The largest digit is `5`.
+
+### Example 2
+
+**Input:**
+
+```text
+n = 99
+```
+
+**Output:**
+
+```text
+9
+```
+
+**Explanation:**
+
+Both digits are `9`, so the largest digit is `9`.
+
+### Example 3
+
+**Input:**
+
+```text
+n = 12345
+```
+
+**Output:**
+
+```text
+5
+```
+
+**Explanation:**
+
+The digits are `1`, `2`, `3`, `4`, and `5`. The largest digit is `5`.
+
+### Example 4
+
+**Input:**
+
+```text
+n = 80421
+```
+
+**Output:**
+
+```text
+8
+```
+
+**Explanation:**
+
+The digits are `8`, `0`, `4`, `2`, and `1`. The largest digit is `8`.
+
+### Example 5
+
+**Input:**
+
+```text
+n = 0
+```
+
+**Output:**
+
+```text
+0
+```
+
+**Explanation:**
+
+The number `0` contains only one digit, so the largest digit is `0`.
