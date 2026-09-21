@@ -349,3 +349,132 @@ n = 0
 **Explanation:**
 
 The number `0` contains only one digit, so the largest digit is `0`.
+
+---
+
+## [Problem 10: Check for Perfect Number](Problem10.java)
+
+**Problem Statement:**
+
+Given an integer `n`, determine whether it is a **perfect number**.
+
+A **perfect number** is a positive integer whose **proper divisors**, excluding the number itself, add up exactly to the number.
+
+Return `true` if `n` is a perfect number; otherwise, return `false`.
+
+### Example 1
+
+**Input:**
+
+```text
+n = 6
+```
+
+**Output:**
+
+```text
+true
+```
+
+**Explanation:**
+
+The proper divisors of `6` are `1`, `2`, and `3`.
+
+```text
+1 + 2 + 3 = 6
+```
+
+Therefore, `6` is a perfect number.
+
+### Example 2
+
+**Input:**
+
+```text
+n = 4
+```
+
+**Output:**
+
+```text
+false
+```
+
+**Explanation:**
+
+The proper divisors of `4` are `1` and `2`.
+
+```text
+1 + 2 = 3
+```
+
+Since the sum of the proper divisors is not equal to `4`, it is not a perfect number.
+
+### Example 3
+
+**Input:**
+
+```text
+n = 28
+```
+
+**Output:**
+
+```text
+true
+```
+
+**Explanation:**
+
+The proper divisors of `28` are `1`, `2`, `4`, `7`, and `14`.
+
+```text
+1 + 2 + 4 + 7 + 14 = 28
+```
+
+Therefore, `28` is a perfect number.
+
+### Example 4
+
+**Input:**
+
+```text
+n = 1
+```
+
+**Output:**
+
+```text
+false
+```
+
+**Explanation:**
+
+`1` has no proper positive divisors other than itself, and the number itself is excluded. Therefore, the sum of its proper divisors is `0`, which is not equal to `1`.
+
+### Example 5
+
+**Input:**
+
+```text
+n = 12
+```
+
+**Output:**
+
+```text
+false
+```
+
+**Explanation:**
+
+The proper divisors of `12` are `1`, `2`, `3`, `4`, and `6`.
+
+```text
+1 + 2 + 3 + 4 + 6 = 16
+```
+
+Since `16` is not equal to `12`, it is not a perfect number.
+
+---
+
