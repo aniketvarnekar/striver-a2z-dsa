@@ -478,3 +478,63 @@ Since `16` is not equal to `12`, it is not a perfect number.
 
 ---
 
+## [Problem 11: Count of Prime Numbers till N](Problem11.java)
+
+**Problem Statement:**
+
+You are given an integer **n**. You need to find the **number of prime numbers** in the range **[1, n]** (inclusive).
+
+A **prime number** is a number greater than 1 that has no positive divisors other than **1** and **itself**.
+
+Return the number of prime numbers in the range **[1, n]**.
+
+### Example 1:
+
+**Input:**
+
+```text
+n = 6
+```
+
+**Output:**
+
+```text
+3
+```
+
+**Explanation:**
+
+The prime numbers in the range `[1, 6]` are:
+
+```text
+2, 3, 5
+```
+
+Therefore, the count of prime numbers is `3`.
+
+### Example 2:
+
+**Input:**
+
+```text
+n = 10
+```
+
+**Output:**
+
+```text
+4
+```
+
+**Explanation:**
+
+The prime numbers in the range `[1, 10]` are:
+
+```text
+2, 3, 5, 7
+```
+
+Therefore, the count of prime numbers is `4`.
+
+---
+
