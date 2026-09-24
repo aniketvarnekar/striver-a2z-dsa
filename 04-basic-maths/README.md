@@ -616,3 +616,60 @@ Therefore, the LCM is **15**.
 
 ---
 
+## [Problem 13: Divisors of a Number](Problem13.java)
+
+**Problem Statement:**
+
+You are given an integer **n**. You need to find all the **divisors** of n.
+
+A number that completely divides another number without leaving a remainder is called a **divisor**.
+
+Return all the **divisors** of **n** as an array or list in **sorted order**.
+
+### Example 1:
+
+**Input:**
+
+```text
+n = 6
+```
+
+**Output:**
+
+```text
+[1, 2, 3, 6]
+```
+
+**Explanation:**
+
+The divisors of 6 are 1, 2, 3, and 6.
+
+Therefore, the output is:
+
+```text
+[1, 2, 3, 6]
+```
+
+### Example 2:
+
+**Input:**
+
+```text
+n = 8
+```
+
+**Output:**
+
+```text
+[1, 2, 4, 8]
+```
+
+**Explanation:**
+
+The divisors of 8 are 1, 2, 4, and 8.
+
+Therefore, the output is:
+
+```text
+[1, 2, 4, 8]
+```
