@@ -538,3 +538,81 @@ Therefore, the count of prime numbers is `4`.
 
 ---
 
+## [Problem 12: LCM of Two Numbers](Problem12.java)
+
+**Problem Statement:**
+
+You are given two integers **n1** and **n2**. You need to find the **Lowest Common Multiple (LCM)** of the two given numbers.
+
+The **Lowest Common Multiple (LCM)** of two integers is the smallest positive integer that is divisible by both integers.
+
+Return the **LCM** of the two numbers.
+
+### Example 1:
+
+**Input:**
+
+```text
+n1 = 4
+n2 = 6
+```
+
+**Output:**
+
+```text
+12
+```
+
+**Explanation:**
+
+The multiples of 4 are:
+
+```text
+4, 8, 12, 16, ...
+```
+
+The multiples of 6 are:
+
+```text
+6, 12, 18, 24, ...
+```
+
+The smallest positive number that is divisible by both 4 and 6 is **12**.
+
+Therefore, the LCM is **12**.
+
+### Example 2:
+
+**Input:**
+
+```text
+n1 = 3
+n2 = 5
+```
+
+**Output:**
+
+```text
+15
+```
+
+**Explanation:**
+
+The multiples of 3 are:
+
+```text
+3, 6, 9, 12, 15, ...
+```
+
+The multiples of 5 are:
+
+```text
+5, 10, 15, 20, ...
+```
+
+The smallest positive number that is divisible by both 3 and 5 is **15**.
+
+Therefore, the LCM is **15**.
+
+---
+
